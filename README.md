@@ -6,7 +6,7 @@
 
 ## 👨‍💻 About Me
 
-I'm a passionate **Software Engineer** and **AI Enthusiast** currently pursuing a **BS in Computer Science** at COMSATS University Islamabad (2023-2027). I love building impactful solutions at the intersection of **Web Development**, **Software Engineering**, **AI**, and **Machine Learning**. 
+I'm a passionate **Software Engineer** and **AI Enthusiast** currently pursuing a **BS in Computer Science** at COMSATS University Islamabad. I love building impactful solutions at the intersection of **Web Development**, **Software Engineering**, **AI**, and **Machine Learning**. 
 
 - 🧠 Always learning, problem-solving, and collaborating.
 - ⚙️ Strong foundation in **Java**, **Python**, **C++**, and **MySQL**.
