@@ -62,6 +62,11 @@ const ayaan = {
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ersatz-xD&theme=react-dark" alt="GitHub Activity Graph" width="800"/>
 </p>
 
+<p align="center">
+  <!-- Stats Cards with custom react-dark colors -->
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Ersatz-xD&theme=react&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF" width="400"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ersatz-xD&theme=react&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF" width="400"/>
+</p>
 
 ---
 
