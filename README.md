@@ -1,41 +1,89 @@
-# Hi there, I'm Ayaan Ahmed Khan 👋
+Here's the corrected version with your GitHub username and fixed logos, plus some additional enhancements:
 
-🔧 **Debugging Life & Code** | 💻 **Aspiring Full-Stack Developer** | 🤖 **AI & ML Enthusiast** | 🎨 **Blending Code & Creativity**
 
----
+# 👋 Hi, I'm Ayaan Ahmed Khan 
 
-## 👨‍💻 About Me
+<h3 align="center">⚡ Full-Stack Developer | AI/ML Explorer | Creative Technologist</h3>
 
-I'm a passionate **Software Engineer** and **AI Enthusiast** currently pursuing a **BS in Computer Science** at COMSATS University Islamabad. I love building impactful solutions at the intersection of **Web Development**, **Software Engineering**, **AI**, and **Machine Learning**. 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=22D3EE&center=true&vCenter=true&width=435&lines=Debugging+Life+%26+Code;Turning+Coffee+into+Code;MERN+Stack+Learner;AI+Enthusiast" alt="Typing SVG" />
+</p>
 
-- 🧠 Always learning, problem-solving, and collaborating.
-- ⚙️ Strong foundation in **Java**, **Python**, **C++**, and **MySQL**.
-- 🌟 Active member of the **ACM Society**, organizing tech events and attending bootcamps.
-
----
-
-## 🚀 Goals
-- Secure top-tier internships.
-- Advance in **Full-Stack Development**, **AI**, and **ML**.
-- Build projects that blend creativity and technology.
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300">
+</p>
 
 ---
 
-## 🛠️ Skills
-- **Java**
-- **Python**
-- **C++**
-- **MySQL**
-- **Problem Solving**
-- **Graphic Design**
+## 🚀 About Me
+
+```javascript
+const ayaan = {
+  pronouns: "he" | "him",
+  education: "BS Computer Science @ COMSATS Islamabad",
+  focus: ["Full-Stack Development", "AI/ML", "Creative Coding"],
+  currentStack: ["MongoDB", "Express", "React", "Node.js"],
+  hobbies: ["Tech Events", "Open Source", "UI/UX Design"],
+  funFact: "Can debug code but still can't fix my sleep schedule"
+}
+```
 
 ---
 
-## 💬 Let's Connect!
-- 📫 Feel free to reach out to me for collaborations and tech discussions.
-- 🌐 [LinkedIn](https://www.linkedin.com/in/ayaan-ahmed-khan-448600351/)
+## 🛠️ Tech Stack
+
+### 💻 Programming Languages
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+
+### 🌐 Web Development
+![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-%23000000.svg?style=for-the-badge&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+### 🛢️ Databases
+![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+
+### 🎨 Design
+![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Adobe Photoshop](https://img.shields.io/badge/Photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe-photoshop&logoColor=white)
 
 ---
 
-_Always open to learning, collaborating, and building something impactful!_ 🚀
+## 📈 GitHub Stats
 
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ersatz-xD&theme=react-dark" alt="GitHub Activity Graph" width="800"/>
+</p>
+
+
+---
+
+
+## 🤝 Let's Connect!
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/ayaan-ahmed-khan-448600351/">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:your.email@example.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://github.com/Ersatz-xD">
+    <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</p>
+
+
+
+<p align="center">
+  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> 
+  <em><b>Always happy to collaborate!</b></em>
+</p>
+```
