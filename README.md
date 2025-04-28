@@ -1,6 +1,3 @@
-Here's the corrected version with your GitHub username and fixed logos, plus some additional enhancements:
-
-
 # 👋 Hi, I'm Ayaan Ahmed Khan 
 
 <h3 align="center">⚡ Full-Stack Developer | AI/ML Explorer | Creative Technologist</h3>
@@ -75,20 +72,21 @@ const ayaan = {
 
 <p align="center">
   <a href="https://www.linkedin.com/in/ayaan-ahmed-khan-448600351/">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
+  &nbsp;&nbsp;&nbsp;
   <a href="mailto:your.email@example.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
+  &nbsp;&nbsp;&nbsp;
   <a href="https://github.com/Ersatz-xD">
-    <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
 </p>
-
-
 
 <p align="center">
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> 
+  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> 
   <em><b>Always happy to collaborate!</b></em>
 </p>
-```
+
+---
