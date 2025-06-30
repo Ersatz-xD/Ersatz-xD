@@ -4,9 +4,9 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=Full-Stack%20Developer&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=AI/ML%20Explorer%20|%20Creative%20Technologist&descAlignY=55&descSize=20" width="100%"/>
 </div>
 
-<p align="center">
+<div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=22D3EE&center=true&vCenter=true&width=435&lines=Debugging+Life+%26+Code;Turning+Coffee+into+Code;MERN+Stack+Learner;AI+Enthusiast" alt="Typing SVG" />
-</p>
+</div>
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="400">
@@ -16,16 +16,14 @@
 
 ## 🚀 About Me
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/e69de29b-e158-4ea8-a8ab-4b7f8c8c4e9b" width="200" style="border-radius: 20px;"/>
-</div>
 
 ```typescript
+
 const ayaan: Developer = {
   name: "Ayaan Ahmed Khan",
   pronouns: "he" | "him",
   education: "BS Computer Science @ COMSATS Islamabad",
-  location: "Wah Cantt, Punjab, Pakistan 🇵🇰",
+  location: "Islamabad, Pakistan 🇵🇰",
   focus: ["Full-Stack Development", "AI/ML", "Creative Coding", "UI/UX Design"],
   currentStack: ["MongoDB", "Express", "React", "Node.js", "Python"],
   interests: ["Tech Events", "Open Source", "Innovation", "Problem Solving"],
@@ -45,7 +43,6 @@ const ayaan: Developer = {
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&border-radius=15)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 </div>
@@ -90,18 +87,30 @@ const ayaan: Developer = {
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.vercel.app?user=Ersatz-xD&theme=tokyonight&hide_border=true&border_radius=20&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" width="49%"/>
-  <img src="https://github-readme-stats.vercel.app/api?username=Ersatz-xD&show_icons=true&theme=tokyonight&hide_border=true&border_radius=20" alt="GitHub Stats" width="49%"/>
+  
+### 🔥 **Contribution Streak & Overall Stats**
+  
+<img src="https://streak-stats.demolab.com/?user=Ersatz-xD&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=58A6FF&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=58A6FF" alt="GitHub Streak Stats" width="48%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Ersatz-xD&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" alt="GitHub Stats" width="48%"/>
+
+### 📈 **Contribution Activity**
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ersatz-xD&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF" alt="GitHub Activity Graph" width="95%"/>
+
+### 💻 **Commit-Based Language Analytics** 
+*Includes organizational & collaborative project contributions*
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Ersatz-xD&theme=tokyonight&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF" width="48%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ersatz-xD&theme=tokyonight&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF" width="48%"/>
+
+### 🎯 **Repository Language Distribution**
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ersatz-xD&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&include_all_commits=true&count_private=true" alt="Top Languages" width="48%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Ersatz-xD&theme=tokyonight&utcOffset=5&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Productive Time" width="48%"/>
+
 </div>
 
-<div align="center" style="margin-top: 20px;">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ersatz-xD&theme=tokyo-night&hide_border=true&border_radius=20" alt="GitHub Activity Graph" width="90%"/>
-</div>
-
-<div align="center" style="margin-top: 20px;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ersatz-xD&layout=donut&theme=tokyonight&hide_border=true&border_radius=20" alt="Top Languages" width="45%"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Ersatz-xD&theme=tokyonight&utcOffset=5" alt="Productive Time" width="45%"/>
-</div>
+>  **🎯 Professional Insight:** The commit-based analytics above showcase my **full development portfolio**, including **collaborative projects** in organizational repositories. This provides a more accurate representation of my technical expertise across different languages and frameworks.
 
 ---
 
@@ -123,7 +132,7 @@ const ayaan: Developer = {
         <br>AI-Powered Applications
       </td>
       <td align="center" width="33%">
-        <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7763.gif" width="100">
+        <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="100">
         <br><strong>🎯 Goals</strong>
         <br>Open Source Contributions
         <br>Tech Community Building
@@ -166,10 +175,7 @@ const ayaan: Developer = {
   <a href="https://github.com/Ersatz-xD">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&border-radius=10" alt="GitHub" style="margin: 5px;"/>
   </a>
-  <a href="https://twitter.com/AyaanAhmedKhan">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&border-radius=10" alt="Twitter" style="margin: 5px;"/>
-  </a>
-</div>
+  
 
 <div align="center" style="margin-top: 30px;">
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="30">
