@@ -27,7 +27,7 @@ const ayaan: Developer = {
   focus: ["Full-Stack Development", "AI/ML", "Creative Coding", "UI/UX Design"],
   currentStack: ["MongoDB", "Express", "React", "Node.js", "Python"],
   interests: ["Tech Events", "Open Source", "Innovation", "Problem Solving"],
-  motto: "Code with passion, debug with patience! 🐛➡️✨"
+  motto: "Code with passion, debug with patience! ➡️✨"
 };
 ```
 
