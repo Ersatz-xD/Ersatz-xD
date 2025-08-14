@@ -61,17 +61,16 @@ jobs:
       - name: Set up Git config
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
       - name: Commit and Push
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add README.md
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             git commit -m "Daily update: Project Spotlight & Fun Fact"
-            git remote set-url origin https://Ersatz-xD:${GH_PAT}@github.com/Ersatz-xD/Ersatz-xD.git
             git push
           fi
