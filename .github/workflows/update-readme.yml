@@ -58,10 +58,20 @@ jobs:
               f.write(readme)
           EOF
           
-      - name: Commit and Push
+      - name: Set up Git config
         run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+      - name: Commit and Push
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
           git add README.md
-          git commit -m "Daily update: Project Spotlight & Fun Fact" || echo "No changes to commit"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily update: Project Spotlight & Fun Fact"
+            git remote set-url origin https://Ersatz-xD:${GH_PAT}@github.com/Ersatz-xD/Ersatz-xD.git
+            git push
+          fi
