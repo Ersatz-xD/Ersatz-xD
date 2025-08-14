@@ -165,14 +165,14 @@ const ayaan: Developer = {
 
 ### 🎯 Project Spotlight
 <!-- PROJECT_SPOTLIGHT_START -->
-Loading project...
+[Padhlo AI](https://github.com/Ersatz-xD/Padhlo-ai) — AI-powered study assistant to generate structured notes and quizzes using the Gemini API.
 <!-- PROJECT_SPOTLIGHT_END -->
 
 ---
 
 ### 📚 Fun Fact of the Day
 <!-- FUN_FACT_START -->
-Loading fact...
+The "save" icon on Microsoft Word shows a floppy disk with the shutter on backwards.
 <!-- FUN_FACT_END -->
 
 ---
