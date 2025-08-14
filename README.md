@@ -163,6 +163,20 @@ const ayaan: Developer = {
 
 ---
 
+### 🎯 Project Spotlight
+<!-- PROJECT_SPOTLIGHT_START -->
+Loading project...
+<!-- PROJECT_SPOTLIGHT_END -->
+
+---
+
+### 📚 Fun Fact of the Day
+<!-- FUN_FACT_START -->
+Loading fact...
+<!-- FUN_FACT_END -->
+
+---
+
 ## 🤝 Let's Connect & Collaborate!
 
 <div align="center">
