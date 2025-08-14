@@ -11,52 +11,50 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
-
+        
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-
+          
       - name: Update README
         run: |
           python - <<'EOF'
-import json, random, re, requests
-
-# Load projects
-with open("projects.json", "r", encoding="utf-8") as f:
-    projects = json.load(f)
-
-project = random.choice(projects)
-project_md = f"[{project['name']}]({project['url']}) — {project['description']}"
-
-# Get fun fact from API
-fact_resp = requests.get("https://uselessfacts.jsph.pl/random.json?language=en")
-fact_text = fact_resp.json().get("text", "No fact today.")
-
-# Read README
-with open("README.md", "r", encoding="utf-8") as f:
-    readme = f.read()
-
-# Replace between tags
-readme = re.sub(
-    r"(?<=<!-- PROJECT_SPOTLIGHT_START -->)(.*?)(?=<!-- PROJECT_SPOTLIGHT_END -->)",
-    f"\n{project_md}\n",
-    readme,
-    flags=re.DOTALL
-)
-
-readme = re.sub(
-    r"(?<=<!-- FUN_FACT_START -->)(.*?)(?=<!-- FUN_FACT_END -->)",
-    f"\n{fact_text}\n",
-    readme,
-    flags=re.DOTALL
-)
-
-# Save README
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme)
-EOF
-
+          import json, random, re, requests
+          
+          # Load projects
+          with open("projects.json", "r", encoding="utf-8") as f:
+              projects = json.load(f)
+          project = random.choice(projects)
+          project_md = f"[{project['name']}]({project['url']}) — {project['description']}"
+          
+          # Get fun fact from API
+          fact_resp = requests.get("https://uselessfacts.jsph.pl/random.json?language=en")
+          fact_text = fact_resp.json().get("text", "No fact today.")
+          
+          # Read README
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme = f.read()
+              
+          # Replace between tags
+          readme = re.sub(
+              r"(?<=<!-- PROJECT_SPOTLIGHT_START -->)(.*?)(?=<!-- PROJECT_SPOTLIGHT_END -->)",
+              f"\n{project_md}\n",
+              readme,
+              flags=re.DOTALL
+          )
+          readme = re.sub(
+              r"(?<=<!-- FUN_FACT_START -->)(.*?)(?=<!-- FUN_FACT_END -->)",
+              f"\n{fact_text}\n",
+              readme,
+              flags=re.DOTALL
+          )
+          
+          # Save README
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(readme)
+          EOF
+          
       - name: Commit and Push
         run: |
           git config --global user.name "GitHub Actions Bot"
