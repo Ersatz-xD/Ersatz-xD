@@ -1,6 +1,7 @@
 [
   {
     "name": "JavaScript Mini Projects",
+    "url": "https://github.com/Ersatz-xD/js-basic-projects",
     "description": "Beginner-level JavaScript projects to practice DOM manipulation, event handling, and timers.",
     "projects": [
       {
@@ -24,6 +25,7 @@
   },
   {
     "name": "TypeRush",
+    "url": "https://github.com/Ersatz-xD/TypeRush",
     "description": "Terminal-based Typing Speed Test game in C++ that measures WPM and accuracy in real-time.",
     "features": [
       "Clean terminal interface",
@@ -35,12 +37,14 @@
   },
   {
     "name": "Bio Page — React Static Page",
+    "url": "https://github.com/Ersatz-xD/react-bio-page",
     "description": "A personal About Me static site built with React + Vite and deployed to GitHub Pages.",
     "tech_stack": ["React", "Vite", "CSS", "GitHub Pages"],
     "link": "https://ersatz-xd.github.io/react-bio-page/"
   },
   {
     "name": "Padhlo AI",
+    "url": "https://github.com/Ersatz-xD/Padhlo-ai",
     "description": "AI-powered study assistant to generate structured notes and quizzes using the Gemini API.",
     "features": [
       "Notes helper",
@@ -52,11 +56,13 @@
   },
   {
     "name": "PawPal — Digital Network for Animal Welfare (Prototype)",
+    "url": "https://github.com/Ersatz-xD/PawPal",
     "description": "Prototype platform to support animal welfare in Pakistan by connecting public with shelters, vets, and resources.",
     "notes": "Some features like maps, donation processing, and admin control are simulated only."
   },
   {
     "name": "Vibe Snitch — Personality Prediction Desktop App",
+    "url": "https://github.com/Ersatz-xD/VibeSnitch-AI",
     "description": "Predicts MBTI personality type based on user text inputs, using ML and Gemini AI.",
     "features": [
       "User authentication",
