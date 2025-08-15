@@ -165,14 +165,14 @@ const ayaan: Developer = {
 
 ### 🎯 Project Spotlight
 <!-- PROJECT_SPOTLIGHT_START -->
-[Padhlo AI](https://github.com/Ersatz-xD/Padhlo-ai) — AI-powered study assistant to generate structured notes and quizzes using the Gemini API.
+[PawPal — Digital Network for Animal Welfare (Prototype)](https://github.com/Ersatz-xD/PawPal) — Prototype platform to support animal welfare in Pakistan by connecting public with shelters, vets, and resources.
 <!-- PROJECT_SPOTLIGHT_END -->
 
 ---
 
 ### 📚 Fun Fact of the Day
 <!-- FUN_FACT_START -->
-The "save" icon on Microsoft Word shows a floppy disk with the shutter on backwards.
+On an American one-dollar bill, there is an owl in the upper left-hand corner of the "1"encased in the "shield" and a spider hidden in the front upper right-hand corner.
 <!-- FUN_FACT_END -->
 
 ---
