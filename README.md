@@ -165,14 +165,14 @@ const ayaan: Developer = {
 
 ### 🎯 Project Spotlight
 <!-- PROJECT_SPOTLIGHT_START -->
-[JavaScript Mini Projects](https://github.com/Ersatz-xD/js-basic-projects) — Beginner-level JavaScript projects to practice DOM manipulation, event handling, and timers.
+[Padhlo AI](https://github.com/Ersatz-xD/Padhlo-ai) — AI-powered study assistant to generate structured notes and quizzes using the Gemini API.
 <!-- PROJECT_SPOTLIGHT_END -->
 
 ---
 
 ### 📚 Fun Fact of the Day
 <!-- FUN_FACT_START -->
-In 1980, a Las Vegas hospital suspended workers for betting on when patients would die.
+There is a town in Newfoundland, Canada called Dildo.
 <!-- FUN_FACT_END -->
 
 ---
