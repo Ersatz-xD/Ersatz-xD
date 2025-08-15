@@ -165,14 +165,14 @@ const ayaan: Developer = {
 
 ### 🎯 Project Spotlight
 <!-- PROJECT_SPOTLIGHT_START -->
-[PawPal — Digital Network for Animal Welfare (Prototype)](https://github.com/Ersatz-xD/PawPal) — Prototype platform to support animal welfare in Pakistan by connecting public with shelters, vets, and resources.
+[JavaScript Mini Projects](https://github.com/Ersatz-xD/js-basic-projects) — Beginner-level JavaScript projects to practice DOM manipulation, event handling, and timers.
 <!-- PROJECT_SPOTLIGHT_END -->
 
 ---
 
 ### 📚 Fun Fact of the Day
 <!-- FUN_FACT_START -->
-On an American one-dollar bill, there is an owl in the upper left-hand corner of the "1"encased in the "shield" and a spider hidden in the front upper right-hand corner.
+In 1980, a Las Vegas hospital suspended workers for betting on when patients would die.
 <!-- FUN_FACT_END -->
 
 ---
