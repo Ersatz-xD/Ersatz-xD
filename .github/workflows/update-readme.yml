@@ -146,3 +146,4 @@ jobs:
           else
             git commit -m "🤖 Daily update: Project Spotlight & Fun Fact"
             git push
+          fi
