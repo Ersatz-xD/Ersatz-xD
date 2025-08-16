@@ -1,5 +1,4 @@
 name: Update README with Project Spotlight and Fun Fact
-
 on:
   schedule:
     - cron: "0 0 * * *" # Runs daily at midnight UTC
@@ -29,26 +28,87 @@ jobs:
           with open("projects.json", "r", encoding="utf-8") as f:
               projects = json.load(f)
           project = random.choice(projects)
-          project_md = f"[{project['name']}]({project['url']}) — {project['description']}"
+          
+          # Define badge colors and icons for different technologies
+          badge_styles = {
+              "AI Assistant": {"color": "4285f4", "logo": "google"},
+              "Gemini API": {"color": "ea4335", "logo": "google"},
+              "Python": {"color": "3776ab", "logo": "python"},
+              "JavaScript": {"color": "f7df1e", "logo": "javascript"},
+              "TypeScript": {"color": "3178c6", "logo": "typescript"},
+              "React": {"color": "61dafb", "logo": "react"},
+              "Node.js": {"color": "339933", "logo": "node.js"},
+              "Machine Learning": {"color": "ff6f00", "logo": "tensorflow"},
+              "Web Development": {"color": "e34f26", "logo": "html5"},
+              "API": {"color": "009688", "logo": "api"},
+              "Database": {"color": "336791", "logo": "postgresql"},
+              "Frontend": {"color": "61dafb", "logo": "react"},
+              "Backend": {"color": "68217a", "logo": "heroku"},
+              "Mobile": {"color": "a4c639", "logo": "android"},
+              "DevOps": {"color": "326ce5", "logo": "kubernetes"},
+              "Data Science": {"color": "150458", "logo": "pandas"}
+          }
+          
+          # Generate dynamic badges based on project tags
+          project_badges = ""
+          if "tags" in project and project["tags"]:
+              for tag in project["tags"]:
+                  style = badge_styles.get(tag, {"color": "6c757d", "logo": "generic"})
+                  # Replace spaces with %20 for URL encoding
+                  tag_encoded = tag.replace(" ", "%20")
+                  project_badges += f'<img src="https://img.shields.io/badge/{tag_encoded}-{style["color"]}?style=flat-square&logo={style["logo"]}&logoColor=white" alt="{tag}"/>\n'
+          
+          # Create project spotlight HTML content
+          project_content = f"""
+<table>
+<tr>
+<td align="center" width="100%">
+<img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
+<br><br>
+<h3><a href="{project['url']}">🚀 {project['name']}</a></h3>
+<p><em>{project['description']}</em></p>
+{project_badges}
+</td>
+</tr>
+</table>
+"""
           
           # Get fun fact from API
-          fact_resp = requests.get("https://uselessfacts.jsph.pl/random.json?language=en")
-          fact_text = fact_resp.json().get("text", "No fact today.")
+          try:
+              fact_resp = requests.get("https://uselessfacts.jsph.pl/random.json?language=en", timeout=10)
+              fact_text = fact_resp.json().get("text", "No fact available today.")
+          except:
+              fact_text = "Unable to fetch fun fact today."
+          
+          # Create fun fact HTML content
+          fact_content = f"""
+<table>
+<tr>
+<td align="center" width="100%">
+<img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
+<br><br>
+<h3>🎲 Random Fact!</h3>
+<p><strong>{fact_text}</strong></p>
+<img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
+</td>
+</tr>
+</table>
+"""
           
           # Read README
           with open("README.md", "r", encoding="utf-8") as f:
               readme = f.read()
               
-          # Replace between tags
+          # Replace between tags with new HTML content
           readme = re.sub(
               r"(?<=<!-- PROJECT_SPOTLIGHT_START -->)(.*?)(?=<!-- PROJECT_SPOTLIGHT_END -->)",
-              f"\n{project_md}\n",
+              project_content,
               readme,
               flags=re.DOTALL
           )
           readme = re.sub(
               r"(?<=<!-- FUN_FACT_START -->)(.*?)(?=<!-- FUN_FACT_END -->)",
-              f"\n{fact_text}\n",
+              fact_content,
               readme,
               flags=re.DOTALL
           )
@@ -71,6 +131,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Daily update: Project Spotlight & Fun Fact"
+            git commit -m "🤖 Daily update: Project Spotlight & Fun Fact"
             git push
           fi
