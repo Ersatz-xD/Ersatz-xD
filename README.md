@@ -162,11 +162,11 @@ const ayaan: Developer = {
 </div>
 
 ---
-# 🌟 Daily Highlights
+## 🌟 Daily Highlights
 
 <div align="center">
 
-## 🎯 Project Spotlight
+### 🎯 Project Spotlight
 <!-- PROJECT_SPOTLIGHT_START -->
 <table>
 <tr>
@@ -184,9 +184,8 @@ const ayaan: Developer = {
 </table>
 <!-- PROJECT_SPOTLIGHT_END -->
 
----
 
-## 🎲 Fun Fact of the Day
+### 🎲 Fun Fact of the Day
 <!-- FUN_FACT_START -->
 <table>
 <tr>
@@ -201,12 +200,6 @@ const ayaan: Developer = {
 </table>
 <!-- FUN_FACT_END -->
 
-</div>
-
----
-
-<div align="center">
-<sub><i>🤖 Automatically updated daily by GitHub Actions</i></sub>
 </div>
 
 ---
