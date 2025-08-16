@@ -21,7 +21,7 @@ jobs:
           
       - name: Update README
         run: |
-          python - <<'EOF'
+          python3 << 'EOF'
           import json, random, re, requests
           
           # Load projects
@@ -77,22 +77,17 @@ jobs:
                   style = badge_styles.get(tech, {"color": "6c757d", "logo": "generic"})
                   # Replace spaces with %20 for URL encoding and handle special characters
                   tech_encoded = tech.replace(" ", "%20").replace("+", "%2B")
-                  project_badges += f'<img src="https://img.shields.io/badge/{tech_encoded}-{style["color"]}?style=flat-square&logo={style["logo"]}&logoColor=white" alt="{tech}"/>\n'
+                  project_badges += f'<img src="https://img.shields.io/badge/{tech_encoded}-{style["color"]}?style=flat-square&logo={style["logo"]}&logoColor=white" alt="{tech}"/>'
+                  project_badges += "\n"
           
           # Create project spotlight HTML content
-          project_content = f"""
-<table>
-<tr>
-<td align="center" width="100%">
-<img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
-<br><br>
-<h3><a href="{project['url']}">🚀 {project['name']}</a></h3>
-<p><em>{project['description']}</em></p>
-{project_badges}
-</td>
-</tr>
-</table>
-"""
+          project_content = "\n<table>\n<tr>\n<td align=\"center\" width=\"100%\">\n"
+          project_content += "<img src=\"https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white\" alt=\"Featured Project\"/>\n"
+          project_content += "<br><br>\n"
+          project_content += f"<h3><a href=\"{project['url']}\">🚀 {project['name']}</a></h3>\n"
+          project_content += f"<p><em>{project['description']}</em></p>\n"
+          project_content += project_badges
+          project_content += "</td>\n</tr>\n</table>\n"
           
           # Get fun fact from API
           try:
@@ -101,20 +96,17 @@ jobs:
           except:
               fact_text = "Unable to fetch fun fact today."
           
+          # Escape any quotes in the fact text
+          fact_text = fact_text.replace('"', '\\"').replace("'", "\\'")
+          
           # Create fun fact HTML content
-          fact_content = f"""
-<table>
-<tr>
-<td align="center" width="100%">
-<img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
-<br><br>
-<h3>🎲 Random Fact!</h3>
-<p><strong>{fact_text}</strong></p>
-<img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
-</td>
-</tr>
-</table>
-"""
+          fact_content = "\n<table>\n<tr>\n<td align=\"center\" width=\"100%\">\n"
+          fact_content += "<img src=\"https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white\" alt=\"Did You Know\"/>\n"
+          fact_content += "<br><br>\n"
+          fact_content += "<h3>🎲 Random Fact!</h3>\n"
+          fact_content += f"<p><strong>{fact_text}</strong></p>\n"
+          fact_content += "<img src=\"https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white\" alt=\"Updated Daily\"/>\n"
+          fact_content += "</td>\n</tr>\n</table>\n"
           
           # Read README
           with open("README.md", "r", encoding="utf-8") as f:
@@ -154,4 +146,3 @@ jobs:
           else
             git commit -m "🤖 Daily update: Project Spotlight & Fun Fact"
             git push
-          fi
