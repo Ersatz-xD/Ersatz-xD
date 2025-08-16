@@ -172,7 +172,7 @@ const ayaan: Developer = {
 
 ### 📚 Fun Fact of the Day
 <!-- FUN_FACT_START -->
-There is a town in Newfoundland, Canada called Dildo.
+The world`s record for keeping a Lifesaver in the mouth with the hole intact is 7 hrs 10 min.
 <!-- FUN_FACT_END -->
 
 ---
