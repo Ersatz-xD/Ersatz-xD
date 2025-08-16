@@ -162,18 +162,50 @@ const ayaan: Developer = {
 </div>
 
 ---
+# 🌟 Daily Highlights
 
-### 🎯 Project Spotlight
+<div align="center">
+
+## 🎯 Project Spotlight
 <!-- PROJECT_SPOTLIGHT_START -->
-[Padhlo AI](https://github.com/Ersatz-xD/Padhlo-ai) — AI-powered study assistant to generate structured notes and quizzes using the Gemini API.
+<table>
+<tr>
+<td align="center" width="100%">
+<img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
+<br><br>
+<h3><a href="https://github.com/Ersatz-xD/Padhlo-ai">🚀 Padhlo AI</a></h3>
+<p><em>AI-powered study assistant to generate structured notes and quizzes using the Gemini API.</em></p>
+<img src="https://img.shields.io/badge/AI%20Assistant-4285f4?style=flat-square&logo=google&logoColor=white" alt="AI Assistant"/>
+<img src="https://img.shields.io/badge/Gemini%20API-ea4335?style=flat-square&logo=google&logoColor=white" alt="Gemini API"/>
+</td>
+</tr>
+</table>
 <!-- PROJECT_SPOTLIGHT_END -->
 
 ---
 
-### 📚 Fun Fact of the Day
+## 🎲 Fun Fact of the Day
 <!-- FUN_FACT_START -->
-The world`s record for keeping a Lifesaver in the mouth with the hole intact is 7 hrs 10 min.
+<table>
+<tr>
+<td align="center" width="100%">
+<img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
+<br><br>
+<h3>🍬 Sweet Record!</h3>
+<p><strong>The world's record for keeping a Lifesaver in the mouth with the hole intact is 7 hours 10 minutes.</strong></p>
+<img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
+</td>
+</tr>
+</table>
 <!-- FUN_FACT_END -->
+
+</div>
+
+---
+
+<div align="center">
+<sub><i>🤖 Automatically updated daily by GitHub Actions</i></sub>
+</div>
 
 ---
 
