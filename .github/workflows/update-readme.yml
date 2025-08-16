@@ -31,32 +31,53 @@ jobs:
           
           # Define badge colors and icons for different technologies
           badge_styles = {
-              "AI Assistant": {"color": "4285f4", "logo": "google"},
-              "Gemini API": {"color": "ea4335", "logo": "google"},
+              # Programming Languages
               "Python": {"color": "3776ab", "logo": "python"},
               "JavaScript": {"color": "f7df1e", "logo": "javascript"},
+              "C++": {"color": "00599c", "logo": "cplusplus"},
               "TypeScript": {"color": "3178c6", "logo": "typescript"},
+              
+              # Frontend Technologies
               "React": {"color": "61dafb", "logo": "react"},
-              "Node.js": {"color": "339933", "logo": "node.js"},
+              "HTML": {"color": "e34f26", "logo": "html5"},
+              "CSS": {"color": "1572b6", "logo": "css3"},
+              "Vite": {"color": "646cff", "logo": "vite"},
+              
+              # Backend Technologies
+              "Node.js": {"color": "339933", "logo": "nodedotjs"},
+              "Express": {"color": "000000", "logo": "express"},
+              
+              # Databases
+              "MongoDB": {"color": "47a248", "logo": "mongodb"},
+              "MySQL": {"color": "4479a1", "logo": "mysql"},
+              
+              # APIs and Services
+              "Gemini API": {"color": "ea4335", "logo": "google"},
+              "JWT": {"color": "000000", "logo": "jsonwebtokens"},
+              
+              # UI/Desktop
+              "PyQt": {"color": "41cd52", "logo": "qt"},
+              
+              # Deployment/Hosting
+              "GitHub Pages": {"color": "222222", "logo": "githubpages"},
+              
+              # AI/ML
               "Machine Learning": {"color": "ff6f00", "logo": "tensorflow"},
-              "Web Development": {"color": "e34f26", "logo": "html5"},
-              "API": {"color": "009688", "logo": "api"},
-              "Database": {"color": "336791", "logo": "postgresql"},
-              "Frontend": {"color": "61dafb", "logo": "react"},
-              "Backend": {"color": "68217a", "logo": "heroku"},
-              "Mobile": {"color": "a4c639", "logo": "android"},
-              "DevOps": {"color": "326ce5", "logo": "kubernetes"},
-              "Data Science": {"color": "150458", "logo": "pandas"}
+              "Gemini AI": {"color": "ea4335", "logo": "google"},
+              
+              # General
+              "API": {"color": "009688", "logo": "fastapi"},
+              "Authentication": {"color": "000000", "logo": "auth0"}
           }
           
-          # Generate dynamic badges based on project tags
+          # Generate dynamic badges based on project tech_stack
           project_badges = ""
-          if "tags" in project and project["tags"]:
-              for tag in project["tags"]:
-                  style = badge_styles.get(tag, {"color": "6c757d", "logo": "generic"})
-                  # Replace spaces with %20 for URL encoding
-                  tag_encoded = tag.replace(" ", "%20")
-                  project_badges += f'<img src="https://img.shields.io/badge/{tag_encoded}-{style["color"]}?style=flat-square&logo={style["logo"]}&logoColor=white" alt="{tag}"/>\n'
+          if "tech_stack" in project and project["tech_stack"]:
+              for tech in project["tech_stack"]:
+                  style = badge_styles.get(tech, {"color": "6c757d", "logo": "generic"})
+                  # Replace spaces with %20 for URL encoding and handle special characters
+                  tech_encoded = tech.replace(" ", "%20").replace("+", "%2B")
+                  project_badges += f'<img src="https://img.shields.io/badge/{tech_encoded}-{style["color"]}?style=flat-square&logo={style["logo"]}&logoColor=white" alt="{tech}"/>\n'
           
           # Create project spotlight HTML content
           project_content = f"""
