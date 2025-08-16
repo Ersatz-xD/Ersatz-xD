@@ -173,10 +173,8 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/Padhlo-ai">🚀 Padhlo AI</a></h3>
-<p><em>AI-powered study assistant to generate structured notes and quizzes using the Gemini API.</em></p>
-<img src="https://img.shields.io/badge/AI%20Assistant-4285f4?style=flat-square&logo=google&logoColor=white" alt="AI Assistant"/>
-<img src="https://img.shields.io/badge/Gemini%20API-ea4335?style=flat-square&logo=google&logoColor=white" alt="Gemini API"/>
+<h3><a href="https://github.com/Ersatz-xD/PawPal">🚀 PawPal — Digital Network for Animal Welfare (Prototype)</a></h3>
+<p><em>Prototype platform to support animal welfare in Pakistan by connecting public with shelters, vets, and resources.</em></p>
 </td>
 </tr>
 </table>
@@ -191,8 +189,8 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
-<h3>🍬 Sweet Record!</h3>
-<p><strong>The world's record for keeping a Lifesaver in the mouth with the hole intact is 7 hours 10 minutes.</strong></p>
+<h3>🎲 Random Fact!</h3>
+<p><strong>You spend 7 years of your life in the bathroom.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
