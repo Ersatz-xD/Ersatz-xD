@@ -173,8 +173,14 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/PawPal">🚀 PawPal — Digital Network for Animal Welfare (Prototype)</a></h3>
-<p><em>Prototype platform to support animal welfare in Pakistan by connecting public with shelters, vets, and resources.</em></p>
+<h3><a href="https://github.com/Ersatz-xD/Padhlo-ai">🚀 Padhlo AI</a></h3>
+<p><em>AI-powered study assistant to generate structured notes and quizzes using the Gemini API.</em></p>
+<img src="https://img.shields.io/badge/React-61dafb?style=flat-square&logo=react&logoColor=white" alt="React"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express"/>
+<img src="https://img.shields.io/badge/MongoDB-47a248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
+<img src="https://img.shields.io/badge/Gemini%20API-ea4335?style=flat-square&logo=google&logoColor=white" alt="Gemini API"/>
+<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT"/>
 </td>
 </tr>
 </table>
@@ -189,7 +195,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>1 in 8 Americans has worked at a McDonalds restaurant.</strong></p>
+<p><strong>In the average lifetime, a person will walk the equivalent of 5 times around the equator.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
