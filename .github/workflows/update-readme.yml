@@ -31,44 +31,56 @@ jobs:
           
           # Define badge colors and icons for different technologies
           badge_styles = {
-              # Programming Languages
-              "Python": {"color": "3776ab", "logo": "python"},
-              "JavaScript": {"color": "f7df1e", "logo": "javascript"},
-              "C++": {"color": "00599c", "logo": "cplusplus"},
-              "TypeScript": {"color": "3178c6", "logo": "typescript"},
-              
-              # Frontend Technologies
-              "React": {"color": "61dafb", "logo": "react"},
-              "HTML": {"color": "e34f26", "logo": "html5"},
-              "CSS": {"color": "1572b6", "logo": "css3"},
-              "Vite": {"color": "646cff", "logo": "vite"},
-              
-              # Backend Technologies
-              "Node.js": {"color": "339933", "logo": "nodedotjs"},
-              "Express": {"color": "000000", "logo": "express"},
-              
-              # Databases
-              "MongoDB": {"color": "47a248", "logo": "mongodb"},
-              "MySQL": {"color": "4479a1", "logo": "mysql"},
-              
-              # APIs and Services
-              "Gemini API": {"color": "ea4335", "logo": "google"},
-              "JWT": {"color": "000000", "logo": "jsonwebtokens"},
-              
-              # UI/Desktop
-              "PyQt": {"color": "41cd52", "logo": "qt"},
-              
-              # Deployment/Hosting
-              "GitHub Pages": {"color": "222222", "logo": "githubpages"},
-              
-              # AI/ML
-              "Machine Learning": {"color": "ff6f00", "logo": "tensorflow"},
-              "Gemini AI": {"color": "ea4335", "logo": "google"},
-              
-              # General
-              "API": {"color": "009688", "logo": "fastapi"},
-              "Authentication": {"color": "000000", "logo": "auth0"}
+          # Programming Languages
+          "Python": {"color": "3776ab", "logo": "python"},
+          "JavaScript": {"color": "f7df1e", "logo": "javascript"},
+          "C++": {"color": "00599c", "logo": "cplusplus"},
+          "TypeScript": {"color": "3178c6", "logo": "typescript"},
+          
+          # Frontend Technologies
+          "React": {"color": "61dafb", "logo": "react"},
+          "HTML": {"color": "e34f26", "logo": "html5"},
+          "CSS": {"color": "1572b6", "logo": "css3"},
+          "Vite": {"color": "646cff", "logo": "vite"},
+          
+          # Backend Technologies
+          "Node.js": {"color": "339933", "logo": "nodedotjs"},
+          "Express": {"color": "000000", "logo": "express"},
+          "Flask": {"color": "000000", "logo": "flask"},
+          "Werkzeug": {"color": "f5dd42", "logo": "python"},  # Werkzeug has no logo; using Python
+          
+          # Databases
+          "MongoDB": {"color": "47a248", "logo": "mongodb"},
+          "MySQL": {"color": "4479a1", "logo": "mysql"},
+          
+          # APIs and Services
+          "Gemini API": {"color": "ea4335", "logo": "google"},
+          "JWT": {"color": "000000", "logo": "jsonwebtokens"},
+          
+          # UI/Desktop
+          "PyQt": {"color": "41cd52", "logo": "qt"},
+          
+          # Deployment/Hosting
+          "GitHub Pages": {"color": "222222", "logo": "githubpages"},
+          
+          # AI/ML
+          "Machine Learning": {"color": "ff6f00", "logo": "tensorflow"},
+          "Gemini AI": {"color": "ea4335", "logo": "google"},
+          "NumPy": {"color": "013243", "logo": "numpy"},
+          "pandas": {"color": "150458", "logo": "pandas"},
+          "scikit-learn": {"color": "f7931e", "logo": "scikitlearn"},
+          "Matplotlib": {"color": "11557c", "logo": "plotly"},   # no matplotlib logo; using plotly
+          "Seaborn": {"color": "4c72b0", "logo": "python"},      # no seaborn logo; fallback
+          
+          # Notebook/Tools
+          "Jupyter Notebook": {"color": "f37626", "logo": "jupyter"},
+          
+          # General
+          "JSON": {"color": "000000", "logo": "json"},
+          "API": {"color": "009688", "logo": "fastapi"},
+          "Authentication": {"color": "000000", "logo": "auth0"}
           }
+
           
           # Generate dynamic badges based on project tech_stack
           project_badges = ""
