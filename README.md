@@ -195,7 +195,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>In the average lifetime, a person will walk the equivalent of 5 times around the equator.</strong></p>
+<p><strong>The world`s record for keeping a Lifesaver in the mouth with the hole intact is 7 hrs 10 min.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
