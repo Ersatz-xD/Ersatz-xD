@@ -173,9 +173,15 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/TypeRush">🚀 TypeRush</a></h3>
-<p><em>Terminal-based Typing Speed Test game in C++ that measures WPM and accuracy in real-time.</em></p>
-<img src="https://img.shields.io/badge/C%2B%2B-00599c?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
+<h3><a href="https://github.com/Ersatz-xD/ml-supervised">🚀 ML-Supervised</a></h3>
+<p><em>Hands-on repository for supervised machine learning in Python focused on Linear and Logistic Regression with from-scratch and scikit-learn implementations.</em></p>
+<img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
+<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"/>
+<img src="https://img.shields.io/badge/scikit-learn-f7931e?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
+<img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=plotly&logoColor=white" alt="Matplotlib"/>
+<img src="https://img.shields.io/badge/Seaborn-4c72b0?style=flat-square&logo=python&logoColor=white" alt="Seaborn"/>
+<img src="https://img.shields.io/badge/Jupyter%20Notebook-f37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter Notebook"/>
 </td>
 </tr>
 </table>
@@ -190,7 +196,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>The longest word comprised of one row on the keyboard is: TYPEWRITER</strong></p>
+<p><strong>A full-loaded supertanker traveling at normal speed takes at least 20 minutes to stop.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
