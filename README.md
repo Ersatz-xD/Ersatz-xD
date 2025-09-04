@@ -173,14 +173,13 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/Padhlo-ai">🚀 Padhlo AI</a></h3>
-<p><em>AI-powered study assistant to generate structured notes and quizzes using the Gemini API.</em></p>
-<img src="https://img.shields.io/badge/React-61dafb?style=flat-square&logo=react&logoColor=white" alt="React"/>
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express"/>
-<img src="https://img.shields.io/badge/MongoDB-47a248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"/>
-<img src="https://img.shields.io/badge/Gemini%20API-ea4335?style=flat-square&logo=google&logoColor=white" alt="Gemini API"/>
-<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT"/>
+<h3><a href="https://github.com/Ersatz-xD/VibeSnitch-AI">🚀 Vibe Snitch — Personality Prediction Desktop App</a></h3>
+<p><em>Predicts MBTI personality type based on user text inputs, using ML and Gemini AI.</em></p>
+<img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/PyQt-41cd52?style=flat-square&logo=qt&logoColor=white" alt="PyQt"/>
+<img src="https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+<img src="https://img.shields.io/badge/Gemini%20AI-ea4335?style=flat-square&logo=google&logoColor=white" alt="Gemini AI"/>
+<img src="https://img.shields.io/badge/Machine%20Learning-ff6f00?style=flat-square&logo=tensorflow&logoColor=white" alt="Machine Learning"/>
 </td>
 </tr>
 </table>
@@ -195,7 +194,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>In the United States, a pound of potato chips costs two hundred times more than a pound of potatoes.</strong></p>
+<p><strong>Los Angeles` full name `El Pueblo de Nuestra Senora la Reina de Los Angeles de Porciuncula` is reduced to 3.63% of its size in the abbreviation `L.A.`.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
