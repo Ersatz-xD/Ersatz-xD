@@ -40,5 +40,23 @@
     "url": "https://github.com/Ersatz-xD/ml-supervised",
     "description": "Hands-on repository for supervised machine learning in Python focused on Linear and Logistic Regression with from-scratch and scikit-learn implementations.",
     "tech_stack": ["Python", "NumPy", "pandas", "scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook"]
+  },
+  {
+    "name": "StayTracked",
+    "url": "https://github.com/BinaryVibe/StayTracked",
+    "description": "StayTracked is a simple Project Tracking System developed in Java with a MySQL database. It helps users manage projects, track progress, and handle team accounts using OOP principles like inheritance and polymorphism.",
+    "tech_stack": ["Java", "MySQL", "Apache NetBeans", "Git", "GitHub", "Swing (FlatLaf)"]
+  },
+  {
+    "name": "RedactedVault",
+    "url": "https://github.com/C0deCrypt/RedactedVault",
+    "description": "A stealthy, secure vault application disguised as a calculator. Unlocks a hidden vault with biometric authentication (Auth2X) supporting AES encryption, facial recognition, and fingerprint verification.",
+    "tech_stack": ["Python", "C++", "MySQL", "Tkinter", "OpenCV", "face_recognition", "SecuGen SDK", "Fernet (AES-128)"]
+  },
+  {
+    "name": "Auth2X",
+    "url": "https://github.com/C0deCrypt/Auth2X",
+    "description": "A dual-mode biometric authentication system supporting face recognition and fingerprint matching. Uses AES-encrypted storage of biometric data and integrates with a Tkinter GUI for registration and authentication.",
+    "tech_stack": ["Python", "C++", "MySQL", "Tkinter", "OpenCV", "SecuGen SDK", "Minutiae-Based Matching", "Fernet (AES-128)"]
   }
 ]
