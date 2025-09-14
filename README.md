@@ -195,7 +195,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>The HyperMart outside of Garland Texas has 58 check-outs.</strong></p>
+<p><strong>In space, astronauts are unable to cry, because there is no gravity and the tears won`t flow.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
