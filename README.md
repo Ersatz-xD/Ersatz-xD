@@ -173,13 +173,12 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/VibeSnitch-AI">🚀 Vibe Snitch — Personality Prediction Desktop App</a></h3>
-<p><em>Predicts MBTI personality type based on user text inputs, using ML and Gemini AI.</em></p>
-<img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/PyQt-41cd52?style=flat-square&logo=qt&logoColor=white" alt="PyQt"/>
-<img src="https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-<img src="https://img.shields.io/badge/Gemini%20AI-ea4335?style=flat-square&logo=google&logoColor=white" alt="Gemini AI"/>
-<img src="https://img.shields.io/badge/Machine%20Learning-ff6f00?style=flat-square&logo=tensorflow&logoColor=white" alt="Machine Learning"/>
+<h3><a href="https://github.com/Ersatz-xD/react-bio-page">🚀 Bio Page — React Static Page</a></h3>
+<p><em>A personal About Me static site built with React + Vite and deployed to GitHub Pages.</em></p>
+<img src="https://img.shields.io/badge/React-61dafb?style=flat-square&logo=react&logoColor=white" alt="React"/>
+<img src="https://img.shields.io/badge/Vite-646cff?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
+<img src="https://img.shields.io/badge/CSS-1572b6?style=flat-square&logo=css3&logoColor=white" alt="CSS"/>
+<img src="https://img.shields.io/badge/GitHub%20Pages-222222?style=flat-square&logo=githubpages&logoColor=white" alt="GitHub Pages"/>
 </td>
 </tr>
 </table>
@@ -194,7 +193,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>Hot water is heavier than cold.</strong></p>
+<p><strong>The pop you hear when you crack your knuckles is actually a bubble of gas burning.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
