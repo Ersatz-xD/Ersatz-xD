@@ -91,11 +91,12 @@ const ayaan: Developer = {
 ### 🔥 **Contribution Streak & Overall Stats**
   
 <img src="https://streak-stats.demolab.com/?user=Ersatz-xD&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=58A6FF&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=58A6FF" alt="GitHub Streak Stats" width="48%"/>
-<img src="https://github-readme-stats.vercel.app/api?username=Ersatz-xD&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" alt="GitHub Stats" width="48%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ersatz-xD&theme=tokyonight" alt="Profile Summary Stats" width="48%"/>
 
 ### 📈 **Contribution Activity**
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ersatz-xD&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF" alt="GitHub Activity Graph" width="95%"/>
+
 
 ### 💻 **Commit-Based Language Analytics** 
 *Includes organizational & collaborative project contributions*
