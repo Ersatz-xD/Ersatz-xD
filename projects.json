@@ -42,6 +42,12 @@
     "tech_stack": ["Python", "NumPy", "pandas", "scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook"]
   },
   {
+    "name": "ML-Unsupervised",
+    "url": "https://github.com/Ersatz-xD/ml-unsupervised",
+    "description": "Exploration of unsupervised learning algorithms including anomaly detection, and recommender systems. Features detailed notebooks with visualizations and insights.",
+    "tech_stack": ["Python", "NumPy", "pandas", "scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook"]
+  },
+  {
     "name": "StayTracked",
     "url": "https://github.com/BinaryVibe/StayTracked",
     "description": "StayTracked is a simple Project Tracking System developed in Java with a MySQL database. It helps users manage projects, track progress, and handle team accounts using OOP principles like inheritance and polymorphism.",
