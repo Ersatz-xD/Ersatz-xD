@@ -174,14 +174,13 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/BinaryVibe/StayTracked">🚀 StayTracked</a></h3>
-<p><em>StayTracked is a simple Project Tracking System developed in Java with a MySQL database. It helps users manage projects, track progress, and handle team accounts using OOP principles like inheritance and polymorphism.</em></p>
-<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java"/>
+<h3><a href="https://github.com/Ersatz-xD/VibeSnitch-AI">🚀 Vibe Snitch — Personality Prediction Desktop App</a></h3>
+<p><em>Predicts MBTI personality type based on user text inputs, using ML and Gemini AI.</em></p>
+<img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/PyQt-41cd52?style=flat-square&logo=qt&logoColor=white" alt="PyQt"/>
 <img src="https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-<img src="https://img.shields.io/badge/Apache%20NetBeans-1b6ac6?style=flat-square&logo=apachenetbeanside&logoColor=white" alt="Apache NetBeans"/>
-<img src="https://img.shields.io/badge/Git-f05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-<img src="https://img.shields.io/badge/Swing%20(FlatLaf)-5382a1?style=flat-square&logo=java&logoColor=white" alt="Swing (FlatLaf)"/>
+<img src="https://img.shields.io/badge/Gemini%20AI-ea4335?style=flat-square&logo=google&logoColor=white" alt="Gemini AI"/>
+<img src="https://img.shields.io/badge/Machine%20Learning-ff6f00?style=flat-square&logo=tensorflow&logoColor=white" alt="Machine Learning"/>
 </td>
 </tr>
 </table>
@@ -196,7 +195,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>If you have three quarters, four dimes, and four pennies, you have $1.19, the largest amount of money in coins without being able to make change for a dollar.</strong></p>
+<p><strong>The Olympic was the sister ship of the Titanic, and she provided twenty-five years of service.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
