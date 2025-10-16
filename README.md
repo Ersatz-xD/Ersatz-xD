@@ -174,14 +174,11 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/BinaryVibe/StayTracked">🚀 StayTracked</a></h3>
-<p><em>StayTracked is a simple Project Tracking System developed in Java with a MySQL database. It helps users manage projects, track progress, and handle team accounts using OOP principles like inheritance and polymorphism.</em></p>
-<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java"/>
-<img src="https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-<img src="https://img.shields.io/badge/Apache%20NetBeans-1b6ac6?style=flat-square&logo=apachenetbeanside&logoColor=white" alt="Apache NetBeans"/>
-<img src="https://img.shields.io/badge/Git-f05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-<img src="https://img.shields.io/badge/Swing%20(FlatLaf)-5382a1?style=flat-square&logo=java&logoColor=white" alt="Swing (FlatLaf)"/>
+<h3><a href="https://github.com/Ersatz-xD/js-basic-projects">🚀 JavaScript Mini Projects</a></h3>
+<p><em>Beginner-level JavaScript projects to practice DOM manipulation, event handling, and timers.</em></p>
+<img src="https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white" alt="HTML"/>
+<img src="https://img.shields.io/badge/CSS-1572b6?style=flat-square&logo=css3&logoColor=white" alt="CSS"/>
+<img src="https://img.shields.io/badge/JavaScript-f7df1e?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript"/>
 </td>
 </tr>
 </table>
@@ -196,7 +193,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>Who`s that playing the piano on the \"Mad About You\" theme? Paul Reiser himself.</strong></p>
+<p><strong>A shrimp’s heart is in its head.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
