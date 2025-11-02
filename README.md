@@ -174,15 +174,16 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/ml-supervised">🚀 ML-Supervised</a></h3>
-<p><em>Hands-on repository for supervised machine learning in Python focused on Linear and Logistic Regression with from-scratch and scikit-learn implementations.</em></p>
+<h3><a href="https://github.com/C0deCrypt/RedactedVault">🚀 RedactedVault</a></h3>
+<p><em>A stealthy, secure vault application disguised as a calculator. Unlocks a hidden vault with biometric authentication (Auth2X) supporting AES encryption, facial recognition, and fingerprint verification.</em></p>
 <img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
-<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"/>
-<img src="https://img.shields.io/badge/scikit-learn-f7931e?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
-<img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=plotly&logoColor=white" alt="Matplotlib"/>
-<img src="https://img.shields.io/badge/Seaborn-4c72b0?style=flat-square&logo=python&logoColor=white" alt="Seaborn"/>
-<img src="https://img.shields.io/badge/Jupyter%20Notebook-f37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter Notebook"/>
+<img src="https://img.shields.io/badge/C%2B%2B-00599c?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
+<img src="https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+<img src="https://img.shields.io/badge/Tkinter-ffdd54?style=flat-square&logo=python&logoColor=white" alt="Tkinter"/>
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV"/>
+<img src="https://img.shields.io/badge/face_recognition-5c3ee8?style=flat-square&logo=python&logoColor=white" alt="face_recognition"/>
+<img src="https://img.shields.io/badge/SecuGen%20SDK-6c757d?style=flat-square&logo=fingerprint&logoColor=white" alt="SecuGen SDK"/>
+<img src="https://img.shields.io/badge/Fernet%20(AES-128)-2e8b57?style=flat-square&logo=lock&logoColor=white" alt="Fernet (AES-128)"/>
 </td>
 </tr>
 </table>
@@ -197,7 +198,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>Albert Einstein and Charles Darwin both married their first cousins</strong></p>
+<p><strong>Children grow faster in the springtime.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
