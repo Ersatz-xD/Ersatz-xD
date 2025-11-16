@@ -174,16 +174,8 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/C0deCrypt/Auth2X">🚀 Auth2X</a></h3>
-<p><em>A dual-mode biometric authentication system supporting face recognition and fingerprint matching. Uses AES-encrypted storage of biometric data and integrates with a Tkinter GUI for registration and authentication.</em></p>
-<img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/C%2B%2B-00599c?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
-<img src="https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-<img src="https://img.shields.io/badge/Tkinter-ffdd54?style=flat-square&logo=python&logoColor=white" alt="Tkinter"/>
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV"/>
-<img src="https://img.shields.io/badge/SecuGen%20SDK-6c757d?style=flat-square&logo=fingerprint&logoColor=white" alt="SecuGen SDK"/>
-<img src="https://img.shields.io/badge/Minutiae-Based%20Matching-008080?style=flat-square&logo=python&logoColor=white" alt="Minutiae-Based Matching"/>
-<img src="https://img.shields.io/badge/Fernet%20(AES-128)-2e8b57?style=flat-square&logo=lock&logoColor=white" alt="Fernet (AES-128)"/>
+<h3><a href="https://github.com/Ersatz-xD/PawPal">🚀 PawPal — Digital Network for Animal Welfare (Prototype)</a></h3>
+<p><em>Prototype platform to support animal welfare in Pakistan by connecting public with shelters, vets, and resources.</em></p>
 </td>
 </tr>
 </table>
@@ -198,7 +190,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>In the 1980`s American migraines increased by 60%.</strong></p>
+<p><strong>During his entire life, Vincent Van Gogh sold exactly one painting, “Red Vineyard at Arles”.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
