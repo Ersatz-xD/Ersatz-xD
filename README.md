@@ -174,8 +174,8 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/ml-supervised">🚀 ML-Supervised</a></h3>
-<p><em>Hands-on repository for supervised machine learning in Python focused on Linear and Logistic Regression with from-scratch and scikit-learn implementations.</em></p>
+<h3><a href="https://github.com/Ersatz-xD/ml-unsupervised">🚀 ML-Unsupervised</a></h3>
+<p><em>Exploration of unsupervised learning algorithms including anomaly detection, and recommender systems. Features detailed notebooks with visualizations and insights.</em></p>
 <img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
 <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
 <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"/>
@@ -197,7 +197,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>Approximately every seven minutes of every day, someone in an aerobics class pulls their hamstring.</strong></p>
+<p><strong>There are more donut shops in Canada per capita than any other country.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
