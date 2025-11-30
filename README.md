@@ -174,15 +174,11 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/ml-unsupervised">🚀 ML-Unsupervised</a></h3>
-<p><em>Exploration of unsupervised learning algorithms including anomaly detection, and recommender systems. Features detailed notebooks with visualizations and insights.</em></p>
-<img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
-<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"/>
-<img src="https://img.shields.io/badge/scikit-learn-f7931e?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
-<img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=plotly&logoColor=white" alt="Matplotlib"/>
-<img src="https://img.shields.io/badge/Seaborn-4c72b0?style=flat-square&logo=python&logoColor=white" alt="Seaborn"/>
-<img src="https://img.shields.io/badge/Jupyter%20Notebook-f37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter Notebook"/>
+<h3><a href="https://github.com/Ersatz-xD/js-basic-projects">🚀 JavaScript Mini Projects</a></h3>
+<p><em>Beginner-level JavaScript projects to practice DOM manipulation, event handling, and timers.</em></p>
+<img src="https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white" alt="HTML"/>
+<img src="https://img.shields.io/badge/CSS-1572b6?style=flat-square&logo=css3&logoColor=white" alt="CSS"/>
+<img src="https://img.shields.io/badge/JavaScript-f7df1e?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript"/>
 </td>
 </tr>
 </table>
@@ -197,7 +193,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>Hot water is heavier than cold.</strong></p>
+<p><strong>Ninety percent of New York City cabbies are recently arrived immigrants.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
