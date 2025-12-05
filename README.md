@@ -174,14 +174,16 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/BinaryVibe/StayTracked">🚀 StayTracked</a></h3>
-<p><em>StayTracked is a simple Project Tracking System developed in Java with a MySQL database. It helps users manage projects, track progress, and handle team accounts using OOP principles like inheritance and polymorphism.</em></p>
-<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java"/>
+<h3><a href="https://github.com/C0deCrypt/RedactedVault">🚀 RedactedVault</a></h3>
+<p><em>A stealthy, secure vault application disguised as a calculator. Unlocks a hidden vault with biometric authentication (Auth2X) supporting AES encryption, facial recognition, and fingerprint verification.</em></p>
+<img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/C%2B%2B-00599c?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
 <img src="https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-<img src="https://img.shields.io/badge/Apache%20NetBeans-1b6ac6?style=flat-square&logo=apachenetbeanside&logoColor=white" alt="Apache NetBeans"/>
-<img src="https://img.shields.io/badge/Git-f05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-<img src="https://img.shields.io/badge/Swing%20(FlatLaf)-5382a1?style=flat-square&logo=java&logoColor=white" alt="Swing (FlatLaf)"/>
+<img src="https://img.shields.io/badge/Tkinter-ffdd54?style=flat-square&logo=python&logoColor=white" alt="Tkinter"/>
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV"/>
+<img src="https://img.shields.io/badge/face_recognition-5c3ee8?style=flat-square&logo=python&logoColor=white" alt="face_recognition"/>
+<img src="https://img.shields.io/badge/SecuGen%20SDK-6c757d?style=flat-square&logo=fingerprint&logoColor=white" alt="SecuGen SDK"/>
+<img src="https://img.shields.io/badge/Fernet%20(AES-128)-2e8b57?style=flat-square&logo=lock&logoColor=white" alt="Fernet (AES-128)"/>
 </td>
 </tr>
 </table>
@@ -196,7 +198,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>The \"Dull Men\'s Hall of Fame\" is located in Carroll, Wisconsin.</strong></p>
+<p><strong>Hong Kong holds the most Rolls Royce’s per capita.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
