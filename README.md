@@ -194,7 +194,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>A pound of houseflies contains more protein than a pound of beef</strong></p>
+<p><strong>The Falkland Isles (pop. about 2000) has over 700000 sheep (350 per person).</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
