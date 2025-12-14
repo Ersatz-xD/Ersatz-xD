@@ -174,15 +174,13 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/ml-unsupervised">🚀 ML-Unsupervised</a></h3>
-<p><em>Exploration of unsupervised learning algorithms including anomaly detection, and recommender systems. Features detailed notebooks with visualizations and insights.</em></p>
+<h3><a href="https://github.com/Ersatz-xD/VibeSnitch-AI">🚀 Vibe Snitch — Personality Prediction Desktop App</a></h3>
+<p><em>Predicts MBTI personality type based on user text inputs, using ML and Gemini AI.</em></p>
 <img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
-<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"/>
-<img src="https://img.shields.io/badge/scikit-learn-f7931e?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
-<img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=plotly&logoColor=white" alt="Matplotlib"/>
-<img src="https://img.shields.io/badge/Seaborn-4c72b0?style=flat-square&logo=python&logoColor=white" alt="Seaborn"/>
-<img src="https://img.shields.io/badge/Jupyter%20Notebook-f37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter Notebook"/>
+<img src="https://img.shields.io/badge/PyQt-41cd52?style=flat-square&logo=qt&logoColor=white" alt="PyQt"/>
+<img src="https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+<img src="https://img.shields.io/badge/Gemini%20AI-ea4335?style=flat-square&logo=google&logoColor=white" alt="Gemini AI"/>
+<img src="https://img.shields.io/badge/Machine%20Learning-ff6f00?style=flat-square&logo=tensorflow&logoColor=white" alt="Machine Learning"/>
 </td>
 </tr>
 </table>
@@ -197,7 +195,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>The \"pound\" key on your keyboard (#) is called an octotroph. </strong></p>
+<p><strong>Bulgarians are known to be the biggest yogurt eaters in the world.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
