@@ -196,7 +196,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>13% of Americans actually believe that some parts of the moon are made of cheese.</strong></p>
+<p><strong>Simplistic passwords contribute to over 80% of all computer password break-ins.</strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
