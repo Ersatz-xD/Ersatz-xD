@@ -174,9 +174,8 @@ const ayaan: Developer = {
 <td align="center" width="100%">
 <img src="https://img.shields.io/badge/Featured%20Project-2ea043?style=for-the-badge&logo=github&logoColor=white" alt="Featured Project"/>
 <br><br>
-<h3><a href="https://github.com/Ersatz-xD/TypeRush">🚀 TypeRush</a></h3>
-<p><em>Terminal-based Typing Speed Test game in C++ that measures WPM and accuracy in real-time.</em></p>
-<img src="https://img.shields.io/badge/C%2B%2B-00599c?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
+<h3><a href="https://github.com/Ersatz-xD/PawPal">🚀 PawPal — Digital Network for Animal Welfare (Prototype)</a></h3>
+<p><em>Prototype platform to support animal welfare in Pakistan by connecting public with shelters, vets, and resources.</em></p>
 </td>
 </tr>
 </table>
@@ -191,7 +190,7 @@ const ayaan: Developer = {
 <img src="https://img.shields.io/badge/Did%20You%20Know%3F-ff6b6b?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Did You Know"/>
 <br><br>
 <h3>🎲 Random Fact!</h3>
-<p><strong>Some individuals express concern sharing their soap, rightly so, considering 75% of all people wash from top to bottom.</strong></p>
+<p><strong>An ostrich`s eye is bigger than its brain.  </strong></p>
 <img src="https://img.shields.io/badge/Updated%20Daily-28a745?style=flat-square&logo=clockify&logoColor=white" alt="Updated Daily"/>
 </td>
 </tr>
