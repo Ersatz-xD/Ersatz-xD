@@ -167,17 +167,17 @@
     <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00D9FF" alt="GitHub" style="margin: 4px;"/>
   </a>
   
-  <br><br>
+  <br>
   
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="22" alt="Sparkle">
   <strong style="font-size: 16px; color: #00D9FF;">Always open to collaborative software projects and technical discussions!</strong>
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="22" alt="Sparkle">
   
-  <br><br>
-  
+  <br>
+  <br>
   <img src="https://komarev.com/ghpvc/?username=Ersatz-xD&label=Profile%20Views&color=0e75b6&style=for-the-badge&border-radius=10" alt="Profile Views"/>
-  
-  <br><br>
+  <br>
+  <br>
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,11,20&height=120&section=footer&animation=twinkling" width="100%" alt="Footer Banner"/>
 </div>
