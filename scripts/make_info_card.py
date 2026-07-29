@@ -13,7 +13,6 @@ def make_card():
         ("Contact", "ayaan@example.com")  # Update with your real email
     ]
     
-    # Generate dedicated CSS classes for each row so GitHub doesn't strip inline styles
     style_rules = [
         "  .key { font-family: monospace; font-size: 14px; font-weight: bold; fill: #10b981; }",
         "  .val { font-family: monospace; font-size: 14px; fill: #c9d1d9; }",
@@ -24,12 +23,9 @@ def make_card():
         style_rules.append("  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }")
         for i in range(len(lines)):
             delay = round((i + 1) * 0.15, 2)
+            # Valid standard CSS animation syntax: name | duration | timing-function | delay | fill-mode
             style_rules.append(
-                f"  .row-{i} {{ opacity: 0; animation: fadeIn 0.5s ease-forward {delay}s forwards; }}"
-            )
-            # Fallback standard syntax for webkit/GitHub SVG rendering
-            style_rules.append(
-                f"  .row-{i} {{ opacity: 0; animation: fadeIn 0.5s {delay}s forwards; }}"
+                f"  .row-{i} {{ opacity: 0; animation: fadeIn 0.5s ease {delay}s forwards; }}"
             )
     else:
         for i in range(len(lines)):
