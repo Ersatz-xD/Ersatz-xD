@@ -1,199 +1,183 @@
+
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=AYAAN%20AHMED%20KHAN&fontSize=48&fontColor=00ff9c&fontAlignY=38&animation=fadeIn&desc=Full-Stack%20Developer%20%7C%20AI%2FML%20Explorer%20%7C%20Creative%20Technologist&descAlignY=58&descSize=18&descColor=8be9fd" width="100%"/>
-
-<a href="https://github.com/AyaanAhmedKhan">
-  <img src="https://readme-typing-svg.demolab.com/?lines=const+developer+%3D+%7B+name%3A+%27Ayaan+Ahmed+Khan%27+%7D%3B;Building+full-stack+%26+AI-powered+systems...;Currently+exploring+Next.js+14+%26+LangChain...;Open-source+%7C+Karachi+%2F+Islamabad%2C+Pakistan;&font=Fira+Code&center=true&width=780&height=45&color=00FF9C&vCenter=true&size=22&pause=1200&background=00000000&duration=3200"/>
-</a>
-
-<br>
-
-<img src="https://komarev.com/ghpvc/?username=AyaanAhmedKhan&label=PROFILE%20VIEWS&color=00ff9c&style=for-the-badge&labelColor=0d1117" alt="Profile Views"/>&nbsp;
-<img src="https://img.shields.io/github/followers/AyaanAhmedKhan?label=FOLLOWERS&style=for-the-badge&color=8be9fd&labelColor=0d1117" alt="Followers"/>&nbsp;
-<img src="https://img.shields.io/badge/STATUS-ACTIVELY_BUILDING-ff79c6?style=for-the-badge&labelColor=0d1117" alt="Status"/>
-
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D2137&height=240&section=header&text=Ayaan%20Ahmed%20Khan&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Full-Stack%20Developer%20|%20AI/ML%20Explorer%20|%20Creative%20Technologist&descAlignY=58&descSize=18" width="100%" alt="Header Banner"/>
+  
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=550&lines=Ayaan%40comsats+~+%24+neofetch;Building+Full-Stack+MERN+%26+Laravel+Apps;Exploring+TensorFlow+%26+Generative+AI;Manjaro+Linux+%5BKDE+Plasma%5D+Power+User" alt="Typing SVG" />
 </div>
 
+
+
 <br>
-
-<!-- ============================= HERO / SVG PIPELINE ============================= -->
 <div align="center">
-
 <table>
   <tr>
-    <td align="center" width="370">
-      <img src="./avi-ascii.svg" width="370" alt="Ayaan — self-typing ASCII portrait"/>
-    </td>
-    <td align="center" width="490">
-      <img src="./info-card.svg" width="490" alt="Neofetch-styled terminal info card"/>
-    </td>
+    <td valign="top" align="center"><img src="./avi-ascii.svg" width="370" alt="Self-Typing ASCII Portrait" /></td>
+    <td valign="top" align="center"><img src="./info-card.svg" width="490" alt="Neofetch Info Card" /></td>
   </tr>
 </table>
-
 <br>
-
-<img src="./contrib-heatmap.svg" width="860" alt="53-week animated contribution heatmap"/>
+<img src="./contrib-heatmap.svg" width="860" alt="Animated Contribution Heatmap" />
 
 </div>
 
-<br>
+---
 
-<!-- ============================= WHOAMI ============================= -->
+
+<div align="center">
+  <p><i>Building scalable web applications, cross-platform mobile tools, and AI/ML pipelines.</i></p>
+</div>
+
+#### **💻 Languages & Core Systems**
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=38BDF8&borderColor=38BDF8" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=38BDF8" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/C++-0D1117?style=for-the-badge&logo=c%2B%2B&logoColor=38BDF8" alt="C++" />
+  <img src="https://img.shields.io/badge/Java-0D1117?style=for-the-badge&logo=openjdk&logoColor=38BDF8" alt="Java" />
+  <img src="https://img.shields.io/badge/Manjaro-0D1117?style=for-the-badge&logo=manjaro&logoColor=38BDF8" alt="Manjaro Linux" />
+</div>
+
+#### **🌐 Web & Mobile Development**
+<div align="center">
+  <img src="https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react&logoColor=00D9FF" alt="React" />
+  <img src="https://img.shields.io/badge/Next.js-0D1117?style=for-the-badge&logo=nextdotjs&logoColor=00D9FF" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Node.js-0D1117?style=for-the-badge&logo=node.js&logoColor=00D9FF" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express.js-0D1117?style=for-the-badge&logo=express&logoColor=00D9FF" alt="Express" />
+  <img src="https://img.shields.io/badge/Laravel-0D1117?style=for-the-badge&logo=laravel&logoColor=00D9FF" alt="Laravel" />
+  <img src="https://img.shields.io/badge/Flutter-0D1117?style=for-the-badge&logo=flutter&logoColor=00D9FF" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-0D1117?style=for-the-badge&logo=tailwind-css&logoColor=00D9FF" alt="Tailwind" />
+</div>
+
+#### **🤖 AI / Machine Learning & Cloud Data**
+<div align="center">
+  <img src="https://img.shields.io/badge/TensorFlow-0D1117?style=for-the-badge&logo=tensorflow&logoColor=58A6FF" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/PyTorch-0D1117?style=for-the-badge&logo=pytorch&logoColor=58A6FF" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/Google_Gemini-0D1117?style=for-the-badge&logo=google&logoColor=58A6FF" alt="Gemini API" />
+  <img src="https://img.shields.io/badge/MongoDB-0D1117?style=for-the-badge&logo=mongodb&logoColor=58A6FF" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/MySQL-0D1117?style=for-the-badge&logo=mysql&logoColor=58A6FF" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Firebase-0D1117?style=for-the-badge&logo=Firebase&logoColor=58A6FF" alt="Firebase" />
+  <img src="https://img.shields.io/badge/Vercel-0D1117?style=for-the-badge&logo=vercel&logoColor=58A6FF" alt="Vercel" />
+</div>
+
+#### **🎨 Creative Design & Utilities**
+<div align="center">
+  <img src="https://img.shields.io/badge/Figma-0D1117?style=for-the-badge&logo=figma&logoColor=00D9FF" alt="Figma" />
+  <img src="https://img.shields.io/badge/Photoshop-0D1117?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=00D9FF" alt="Photoshop" />
+  <img src="https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git&logoColor=00D9FF" alt="Git" />
+  <img src="https://img.shields.io/badge/VS%20Code-0D1117?style=for-the-badge&logo=visual%20studio%20code&logoColor=00D9FF" alt="VS Code" />
+</div>
+
+---
+
 <div align="center">
 
-```
+  <table width="860">
+    <tr>
+      <td width="50%" align="center">
+        <img src="https://streak-stats.demolab.com/?user=Ersatz-xD&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=00D9FF&fire=00D9FF&currStreakLabel=58A6FF&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=58A6FF" alt="GitHub Streak Stats" width="100%"/>
+      </td>
+      <td width="50%" align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ersatz-xD&theme=tokyonight" alt="Profile Summary Stats" width="100%"/>
+      </td>
+    </tr>
+  </table>
 
-Ayaan@comsats ~ $ whoami
+  <br>
 
-```
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ersatz-xD&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00D9FF&line=58A6FF&point=FFFFFF" alt="GitHub Activity Graph" width="860"/>
+
+  <br><br>
+
+  <table width="860">
+    <tr>
+      <td width="50%" align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Ersatz-xD&theme=tokyonight&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=58A6FF" width="100%" alt="Commit Languages"/>
+      </td>
+      <td width="50%" align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ersatz-xD&theme=tokyonight&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=58A6FF" width="100%" alt="Repo Languages"/>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ersatz-xD&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&include_all_commits=true&count_private=true" width="100%" alt="Top Languages"/>
+      </td>
+      <td width="50%" align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Ersatz-xD&theme=tokyonight&utcOffset=5&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9" width="100%" alt="Productive Time"/>
+      </td>
+    </tr>
+  </table>
 
 </div>
 
-- 🎓 **BS Computer Science** @ COMSATS University Islamabad
-- 🛠️ **Full-Stack Developer** — MERN, Laravel, and Flutter ecosystems
-- 🧠 **AI/ML Explorer** — TensorFlow, PyTorch, LangChain & the Google Gemini API
-- 🎨 **Creative Technologist** — I like my code fast, my terminals dark, and my UIs deliberate
-- 📍 Based in **Karachi / Islamabad, Pakistan**
-- 🐧 Daily driver: **Manjaro Linux x86_64 (KDE Plasma)**
+> **🎯 Professional Insight:** *Commit-based analytics above represent my full software engineering footprint—including collaborative contributions across organizational repositories and hackathon teams.*
 
-<br>
+---
 
-<!-- ============================= CURRENT FOCUS ============================= -->
+
 <div align="center">
 
-```
+  <table width="860">
+    <tr>
+      <td align="center" width="33%" valign="top">
+        <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="70" alt="Learning Icon">
+        <br><br>
+        <strong>🚀 Currently Learning</strong>
+        <br><br>
+        • Advanced React Patterns<br>
+        • Next.js 14 Server Components<br>
+        • Applied RAG Architecture
+      </td>
+      <td align="center" width="33%" valign="top">
+        <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="70" alt="Building Icon">
+        <br><br>
+        <strong>🔨 Active Builds</strong>
+        <br><br>
+        • Full-Stack MERN & Laravel Apps<br>
+        • Generative AI API Integrations<br>
+        • Terminal & Linux Automation
+      </td>
+      <td align="center" width="33%" valign="top">
+        <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="70" alt="Goals Icon">
+        <br><br>
+        <strong>🎯 Technical Goals</strong>
+        <br><br>
+        • Open-Source Contributions<br>
+        • Campus Tech Community Building<br>
+        • Competitive Programming
+      </td>
+    </tr>
+  </table>
 
-Ayaan@comsats ~ $ cat current\_focus.md
+  <br><br>
 
-```
-
+  <img src="https://github-profile-trophy.vercel.app/?username=Ersatz-xD&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1" alt="GitHub Trophies"/>
 </div>
 
-```yaml
-learning:
-  - Advanced React Patterns (compound components, render props, hooks composition)
-  - Next.js 14 — Server Components & the App Router
-building:
-  - Full-stack MERN & Laravel applications
-  - AI-powered tools on top of LangChain + Gemini
-aiming_for:
-  - Meaningful open-source contributions
-  - Growing a local tech community, one workshop at a time
-```
+---
 
-<br>
 
-<!-- ============================= TECH STACK ============================= -->
 <div align="center">
 
-```
+  <a href="https://www.linkedin.com/in/ayaan-ahmed-khan-448600351/">
+    <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=00D9FF" alt="LinkedIn" style="margin: 4px;"/>
+  </a>
+  <a href="mailto:aayan.shazim@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-0D1117?style=for-the-badge&logo=gmail&logoColor=00D9FF" alt="Email" style="margin: 4px;"/>
+  </a>
+  <a href="https://github.com/Ersatz-xD">
+    <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00D9FF" alt="GitHub" style="margin: 4px;"/>
+  </a>
+  
+  <br><br>
+  
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="22" alt="Sparkle">
+  <strong style="font-size: 16px; color: #00D9FF;">Always open to collaborative software projects and technical discussions!</strong>
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="22" alt="Sparkle">
+  
+  <br><br>
+  
+  <img src="https://komarev.com/ghpvc/?username=Ersatz-xD&label=Profile%20Views&color=0e75b6&style=for-the-badge&border-radius=10" alt="Profile Views"/>
+  
+  <br><br>
 
-Ayaan@comsats ~ $ ls tech-stack/
-
-````
-
-**Languages**
-
-<img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=00ff9c"/>
-<img src="https://img.shields.io/badge/JavaScript-14354C?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
-<img src="https://img.shields.io/badge/C++-14354C?style=for-the-badge&logo=cplusplus&logoColor=00599C"/>
-<img src="https://img.shields.io/badge/Java-14354C?style=for-the-badge&logo=openjdk&logoColor=ED8B00"/>
-
-**Frontend**
-
-<img src="https://img.shields.io/badge/React-14354C?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-<img src="https://img.shields.io/badge/Next.js-14354C?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
-<img src="https://img.shields.io/badge/Tailwind_CSS-14354C?style=for-the-badge&logo=tailwindcss&logoColor=38B2AC"/>
-
-**Backend & Mobile**
-
-<img src="https://img.shields.io/badge/Node.js-14354C?style=for-the-badge&logo=nodedotjs&logoColor=339933"/>
-<img src="https://img.shields.io/badge/Express-14354C?style=for-the-badge&logo=express&logoColor=white"/>
-<img src="https://img.shields.io/badge/Laravel-14354C?style=for-the-badge&logo=laravel&logoColor=FF2D20"/>
-<img src="https://img.shields.io/badge/Flutter-14354C?style=for-the-badge&logo=flutter&logoColor=02569B"/>
-
-**AI / ML**
-
-<img src="https://img.shields.io/badge/TensorFlow-14354C?style=for-the-badge&logo=tensorflow&logoColor=FF6F00"/>
-<img src="https://img.shields.io/badge/PyTorch-14354C?style=for-the-badge&logo=pytorch&logoColor=EE4C2C"/>
-<img src="https://img.shields.io/badge/LangChain-14354C?style=for-the-badge&logo=langchain&logoColor=1C3C3C"/>
-<img src="https://img.shields.io/badge/Google_Gemini-14354C?style=for-the-badge&logo=googlegemini&logoColor=8E75B2"/>
-
-**Databases & Cloud**
-
-<img src="https://img.shields.io/badge/MongoDB-14354C?style=for-the-badge&logo=mongodb&logoColor=47A248"/>
-<img src="https://img.shields.io/badge/MySQL-14354C?style=for-the-badge&logo=mysql&logoColor=4479A1"/>
-<img src="https://img.shields.io/badge/Firebase-14354C?style=for-the-badge&logo=firebase&logoColor=FFCA28"/>
-<img src="https://img.shields.io/badge/Vercel-14354C?style=for-the-badge&logo=vercel&logoColor=white"/>
-
-**Tools & Design**
-
-<img src="https://img.shields.io/badge/Git-14354C?style=for-the-badge&logo=git&logoColor=F05032"/>
-<img src="https://img.shields.io/badge/Figma-14354C?style=for-the-badge&logo=figma&logoColor=F24E1E"/>
-<img src="https://img.shields.io/badge/Photoshop-14354C?style=for-the-badge&logo=adobephotoshop&logoColor=31A8FF"/>
-<img src="https://img.shields.io/badge/VS_Code-14354C?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC"/>
-
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,11,20&height=120&section=footer&animation=twinkling" width="100%" alt="Footer Banner"/>
 </div>
-
-<br>
-
-<!-- ============================= ANALYTICS ============================= -->
-<div align="center">
-
-```
-
-Ayaan@comsats ~ $ ./analytics.sh --verbose
-
-````
-
-<img src="https://github-readme-stats.vercel.app/api?username=AyaanAhmedKhan&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00ff9c&icon_color=8be9fd&text_color=c9d1d9&count_private=true" width="49%"/>
-<img src="https://streak-stats.demolab.com/?user=AyaanAhmedKhan&theme=github-dark-blue&hide_border=true&background=0d1117&ring=00ff9c&fire=ff79c6&currStreakLabel=00ff9c" width="49%"/>
-
-<br><br>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AyaanAhmedKhan&theme=github_dark" width="32%"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AyaanAhmedKhan&theme=github_dark" width="32%"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AyaanAhmedKhan&theme=github_dark&utcOffset=5" width="32%"/>
-
-<br><br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AyaanAhmedKhan&theme=react-dark&hide_border=true&bg_color=0d1117&color=00ff9c&line=8be9fd&point=ff79c6" width="100%"/>
-
-<br><br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyaanAhmedKhan&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00ff9c&text_color=c9d1d9" width="42%"/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=AyaanAhmedKhan&theme=algolia&no-frame=true&no-bg=true&row=2&column=3&margin-w=8&margin-h=8" width="56%"/>
-
-</div>
-
-> **📌 A note on the numbers above:** commit-based analytics reflect activity across both personal and collaborative organizational repositories. Contribution graphs and streaks may include work committed as part of team projects, so they represent overall engagement rather than solo output alone.
-
-<br>
-
-<!-- ============================= CONTACT ============================= -->
-<div align="center">
-
-```
-
-Ayaan@comsats ~ $ contact --list
-
-````
-
-<a href="https://linkedin.com/in/ayaan-ahmed-khan">
-  <img src="https://img.shields.io/badge/LinkedIn-14354C?style=for-the-badge&logo=linkedin&logoColor=0A66C2"/>
-</a>
-<a href="mailto:aayan.shazim@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-14354C?style=for-the-badge&logo=gmail&logoColor=EA4335"/>
-</a>
-<a href="https://github.com/AyaanAhmedKhan">
-  <img src="https://img.shields.io/badge/GitHub-14354C?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-<br><br>
-
-<i>“Compiling ideas into interfaces, one commit at a time.”</i>
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%"/>
