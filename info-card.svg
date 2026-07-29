@@ -3,23 +3,15 @@
   .key { font-family: monospace; font-size: 14px; font-weight: bold; fill: #10b981; }
   .val { font-family: monospace; font-size: 14px; fill: #c9d1d9; }
   .title { font-family: monospace; font-size: 16px; font-weight: bold; fill: #34d399; }
-  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-  .row-0 { opacity: 0; animation: fadeIn 0.5s ease 0.15s forwards; }
-  .row-1 { opacity: 0; animation: fadeIn 0.5s ease 0.3s forwards; }
-  .row-2 { opacity: 0; animation: fadeIn 0.5s ease 0.45s forwards; }
-  .row-3 { opacity: 0; animation: fadeIn 0.5s ease 0.6s forwards; }
-  .row-4 { opacity: 0; animation: fadeIn 0.5s ease 0.75s forwards; }
-  .row-5 { opacity: 0; animation: fadeIn 0.5s ease 0.9s forwards; }
-  .row-6 { opacity: 0; animation: fadeIn 0.5s ease 1.05s forwards; }
 </style>
 <rect width="100%" height="100%" fill="#0d1117" rx="8"/>
 <text x="25" y="40" class="title">Ayaan@comsats ~ $ neofetch</text>
 <line x1="25" y1="50" x2="465" y2="50" stroke="#30363d" stroke-width="1"/>
-  <g class="row-0"><text x="25" y="95" class="key">OS:</text><text x="125" y="95" class="val">Manjaro Linux x86_64 [KDE Plasma]</text></g>
-  <g class="row-1"><text x="25" y="133" class="key">Role:</text><text x="125" y="133" class="val">Full Stack Dev & ML Engineer</text></g>
-  <g class="row-2"><text x="25" y="171" class="key">Edu:</text><text x="125" y="171" class="val">CS @ COMSATS University Islamabad</text></g>
-  <g class="row-3"><text x="25" y="209" class="key">Stack:</text><text x="125" y="209" class="val">Python, React, Laravel, Flutter, Node</text></g>
-  <g class="row-4"><text x="25" y="247" class="key">AI / ML:</text><text x="125" y="247" class="val">TensorFlow, PyTorch, LangChain, Gemini</text></g>
-  <g class="row-5"><text x="25" y="285" class="key">Location:</text><text x="125" y="285" class="val">Karachi / Islamabad, Pakistan</text></g>
-  <g class="row-6"><text x="25" y="323" class="key">Contact:</text><text x="125" y="323" class="val">ayaan@example.com</text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.15s" fill="freeze" /><text x="25" y="95" class="key">OS:</text><text x="125" y="95" class="val">Manjaro Linux x86_64 [KDE Plasma]</text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.3s" fill="freeze" /><text x="25" y="133" class="key">Role:</text><text x="125" y="133" class="val">Full Stack Dev & ML Engineer</text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.45s" fill="freeze" /><text x="25" y="171" class="key">Edu:</text><text x="125" y="171" class="val">CS @ COMSATS University Islamabad</text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.6s" fill="freeze" /><text x="25" y="209" class="key">Stack:</text><text x="125" y="209" class="val">Python, React, Laravel, Flutter, Node</text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.75s" fill="freeze" /><text x="25" y="247" class="key">AI / ML:</text><text x="125" y="247" class="val">TensorFlow, PyTorch, LangChain, Gemini</text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.9s" fill="freeze" /><text x="25" y="285" class="key">Location:</text><text x="125" y="285" class="val">Karachi / Islamabad, Pakistan</text></g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.05s" fill="freeze" /><text x="25" y="323" class="key">Contact:</text><text x="125" y="323" class="val">ayaan@example.com</text></g>
 </svg>

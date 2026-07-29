@@ -1,7 +1,4 @@
-import os
-
 def make_card():
-    static_mode = os.environ.get("STATIC", "0") == "1"
     svg_w, svg_h = 490, 380
     lines = [
         ("OS", "Manjaro Linux x86_64 [KDE Plasma]"),
@@ -13,28 +10,12 @@ def make_card():
         ("Contact", "ayaan@example.com")  # Update with your real email
     ]
     
-    style_rules = [
-        "  .key { font-family: monospace; font-size: 14px; font-weight: bold; fill: #10b981; }",
-        "  .val { font-family: monospace; font-size: 14px; fill: #c9d1d9; }",
-        "  .title { font-family: monospace; font-size: 16px; font-weight: bold; fill: #34d399; }"
-    ]
-    
-    if not static_mode:
-        style_rules.append("  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }")
-        for i in range(len(lines)):
-            delay = round((i + 1) * 0.15, 2)
-            # Valid standard CSS animation syntax: name | duration | timing-function | delay | fill-mode
-            style_rules.append(
-                f"  .row-{i} {{ opacity: 0; animation: fadeIn 0.5s ease {delay}s forwards; }}"
-            )
-    else:
-        for i in range(len(lines)):
-            style_rules.append(f"  .row-{i} {{ opacity: 1; }}")
-            
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {svg_w} {svg_h}" width="{svg_w}" height="{svg_h}">',
         "<style>",
-        "\n".join(style_rules),
+        "  .key { font-family: monospace; font-size: 14px; font-weight: bold; fill: #10b981; }",
+        "  .val { font-family: monospace; font-size: 14px; fill: #c9d1d9; }",
+        "  .title { font-family: monospace; font-size: 16px; font-weight: bold; fill: #34d399; }",
         "</style>",
         '<rect width="100%" height="100%" fill="#0d1117" rx="8"/>',
         '<text x="25" y="40" class="title">Ayaan@comsats ~ $ neofetch</text>',
@@ -43,8 +24,11 @@ def make_card():
     
     for i, (k, v) in enumerate(lines):
         y = 95 + (i * 38)
+        delay = round((i + 1) * 0.15, 2)
+        # Using native SMIL <animate> instead of CSS @keyframes so GitHub/VS Code won't block it
         svg.append(
-            f'  <g class="row-{i}">'
+            f'  <g opacity="0">'
+            f'<animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="{delay}s" fill="freeze" />'
             f'<text x="25" y="{y}" class="key">{k}:</text>'
             f'<text x="125" y="{y}" class="val">{v}</text>'
             f'</g>'
