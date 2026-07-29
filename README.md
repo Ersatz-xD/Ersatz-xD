@@ -27,7 +27,7 @@
   <p><i>Building scalable web applications, cross-platform mobile tools, and AI/ML pipelines.</i></p>
 </div>
 
-#### **💻 Languages & Core Systems**
+### **💻 Languages & Core Systems**
 <div align="center">
   <img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=38BDF8&borderColor=38BDF8" alt="Python" />
   <img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=38BDF8" alt="JavaScript" />
@@ -36,7 +36,7 @@
   <img src="https://img.shields.io/badge/Manjaro-0D1117?style=for-the-badge&logo=manjaro&logoColor=38BDF8" alt="Manjaro Linux" />
 </div>
 
-#### **🌐 Web & Mobile Development**
+### **🌐 Web & Mobile Development**
 <div align="center">
   <img src="https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react&logoColor=00D9FF" alt="React" />
   <img src="https://img.shields.io/badge/Next.js-0D1117?style=for-the-badge&logo=nextdotjs&logoColor=00D9FF" alt="Next.js" />
@@ -47,7 +47,7 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-0D1117?style=for-the-badge&logo=tailwind-css&logoColor=00D9FF" alt="Tailwind" />
 </div>
 
-#### **🤖 AI / Machine Learning & Cloud Data**
+### **🤖 AI / Machine Learning & Cloud Data**
 <div align="center">
   <img src="https://img.shields.io/badge/TensorFlow-0D1117?style=for-the-badge&logo=tensorflow&logoColor=58A6FF" alt="TensorFlow" />
   <img src="https://img.shields.io/badge/PyTorch-0D1117?style=for-the-badge&logo=pytorch&logoColor=58A6FF" alt="PyTorch" />
@@ -58,7 +58,7 @@
   <img src="https://img.shields.io/badge/Vercel-0D1117?style=for-the-badge&logo=vercel&logoColor=58A6FF" alt="Vercel" />
 </div>
 
-#### **🎨 Creative Design & Utilities**
+### **🎨 Creative Design & Utilities**
 <div align="center">
   <img src="https://img.shields.io/badge/Figma-0D1117?style=for-the-badge&logo=figma&logoColor=00D9FF" alt="Figma" />
   <img src="https://img.shields.io/badge/Photoshop-0D1117?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=00D9FF" alt="Photoshop" />
