@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 <div align="center">
 
 <h3><code>Ayaan@comsats ~ $ ./contributions.sh</code></h3>
@@ -15,4 +14,3 @@ cat << 'EOF' > README.md
 </table>
 
 </div>
-EOF
