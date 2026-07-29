@@ -1,7 +1,7 @@
 def make_card():
     svg_w, svg_h = 490, 380
     lines = [
-        ("OS", "Manjaro Linux x86_64 [KDE Plasma]"),
+        ("OS", "Manjaro Linux"),
         ("Role", "Full Stack Dev & ML Engineer"),
         ("Edu", "CS @ COMSATS University Islamabad"),
         ("Stack", "Python, React, Laravel, Flutter, Node"),
@@ -25,10 +25,14 @@ def make_card():
     for i, (k, v) in enumerate(lines):
         y = 95 + (i * 38)
         delay = round((i + 1) * 0.15, 2)
-        # Using native SMIL <animate> instead of CSS @keyframes so GitHub/VS Code won't block it
+        # Using clipPath wipe animation — exactly like your working avi-ascii.svg!
         svg.append(
-            f'  <g opacity="0">'
-            f'<animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="{delay}s" fill="freeze" />'
+            f'  <g clip-path="url(#clip_{i})">'
+            f'<clipPath id="clip_{i}">'
+            f'<rect x="0" y="{y-18}" width="0" height="24">'
+            f'<animate attributeName="width" from="0" to="{svg_w}" dur="0.4s" begin="{delay}s" fill="freeze"/>'
+            f'</rect>'
+            f'</clipPath>'
             f'<text x="25" y="{y}" class="key">{k}:</text>'
             f'<text x="125" y="{y}" class="val">{v}</text>'
             f'</g>'
