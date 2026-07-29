@@ -1,6 +1,7 @@
 import json
 
-PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
+# Nightwing Blue Palette: Background -> Brightest Electric Cyan
+PALETTE = ["#161b22", "#0a2540", "#004d80", "#0077b6", "#0096c7", "#00d9ff"]
 
 def render_svg():
     with open("data/contributions.json") as f:

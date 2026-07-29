@@ -6,20 +6,20 @@ def make_card():
         ("Edu", "CS @ COMSATS University Islamabad"),
         ("Stack", "Python, React, Laravel, Flutter, Node"),
         ("AI / ML", "TensorFlow, PyTorch, LangChain, Gemini"),
-        ("Location", "Karachi / Islamabad, Pakistan"),
-        ("Contact", "ayaan@example.com")  # Update with your real email
+        ("Location", "Islamabad, Pakistan"),
+        ("Contact", "ayaan.shazim@gmail.com")  
     ]
     
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {svg_w} {svg_h}" width="{svg_w}" height="{svg_h}">',
         "<style>",
-        "  .key { font-family: monospace; font-size: 14px; font-weight: bold; fill: #10b981; }",
+        "  .key { font-family: monospace; font-size: 14px; font-weight: bold; fill: #00D9FF; }",
         "  .val { font-family: monospace; font-size: 14px; fill: #c9d1d9; }",
-        "  .title { font-family: monospace; font-size: 16px; font-weight: bold; fill: #34d399; }",
+        "  .title { font-family: monospace; font-size: 16px; font-weight: bold; fill: #38BDF8; }",
         "</style>",
         '<rect width="100%" height="100%" fill="#0d1117" rx="8"/>',
         '<text x="25" y="40" class="title">Ayaan@comsats ~ $ neofetch</text>',
-        '<line x1="25" y1="50" x2="465" y2="50" stroke="#30363d" stroke-width="1"/>'
+        '<line x1="25" y1="50" x2="465" y2="50" stroke="#1f293d" stroke-width="1"/>'
     ]
     
     for i, (k, v) in enumerate(lines):
