@@ -2,7 +2,7 @@ def make_card():
     svg_w, svg_h = 490, 380
     lines = [
         ("OS", "Manjaro Linux"),
-        ("Role", "Full Stack Dev & ML Engineer"),
+        ("Role", "Full Stack Dev &amp; ML Engineer"),
         ("Edu", "CS @ COMSATS University Islamabad"),
         ("Stack", "Python, React, Laravel, Flutter, Node"),
         ("AI / ML", "TensorFlow, PyTorch, LangChain, Gemini"),
@@ -25,10 +25,9 @@ def make_card():
     for i, (k, v) in enumerate(lines):
         y = 95 + (i * 38)
         delay = round((i + 1) * 0.15, 2)
-        # Using clipPath wipe animation — exactly like your working avi-ascii.svg!
         svg.append(
-            f'  <g clip-path="url(#clip_{i})">'
-            f'<clipPath id="clip_{i}">'
+            f'  <g clip-path="url(#card_clip_{i})">'
+            f'<clipPath id="card_clip_{i}">'
             f'<rect x="0" y="{y-18}" width="0" height="24">'
             f'<animate attributeName="width" from="0" to="{svg_w}" dur="0.4s" begin="{delay}s" fill="freeze"/>'
             f'</rect>'
