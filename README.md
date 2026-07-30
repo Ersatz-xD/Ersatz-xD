@@ -164,5 +164,5 @@
   <img src="https://komarev.com/ghpvc/?username=Ersatz-xD&label=Profile%20Views&color=0e75b6&style=for-the-badge&border-radius=10" alt="Profile Views"/>
   <br><br>
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,11,20&height=120&section=footer&animation=twinkling" width="100%" alt="Footer Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D2137&height=120&section=footer&animation=twinkling" width="100%" alt="Footer Banner"/>
 </div>
