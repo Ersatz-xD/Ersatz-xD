@@ -3,19 +3,19 @@
 
 No third-party services and no dependencies — standard library only.
 
-Outputs, all sharing one visual language with ascii.svg (the portrait):
-  stats.svg   hero total + weekly sparkline
-  streak.svg  current and longest streak
-  langs.svg   top languages, by bytes and by repo count
-  year.svg    the year as a character map, in the portrait's own ramp
+Outputs:
+  stats.svg   hero total + weekly sparkline (original grey ink)
+  streak.svg  current and longest streak (Nightwing palette)
+  langs.svg   top languages, by bytes and by repo count (Nightwing palette)
+  year.svg    the year as a character map, in the portrait's own ramp (Nightwing palette)
 
-Every file uses the portrait's grey ink, a monospace face, a transparent
-background, and the same left-to-right clipPath reveal with a cursor riding
-the edge. Motion is SMIL because GitHub strips <script> from READMEs.
+Every file uses a monospace face, a transparent background, and the same 
+left-to-right clipPath reveal with a cursor riding the edge. Motion is SMIL 
+because GitHub strips <script> from READMEs.
 
 Env:
   GITHUB_TOKEN  required
-  GH_LOGIN      user to summarise (default: andriidrok1)
+  GH_LOGIN      user to summarise (default: Ersatz-xD)
   OUT_DIR       where to write (default: repository root)
 """
 import base64
@@ -55,11 +55,19 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 }
 """
 
-# The portrait's ink is the data ink, so every graphic reads as one material.
-LIGHT = dict(data="#6e7681", emph="#424a53", dim="#8c959f",
-             rule="#d8dee4", surface="#ffffff")
-DARK = dict(data="#c9d1d9", emph="#f0f6fc", dim="#8b949e",
-            rule="#30363d", surface="#0d1117")
+# Original palette: used ONLY for stats.svg
+LIGHT_DEFAULT = dict(data="#6e7681", emph="#424a53", dim="#8c959f",
+                     rule="#d8dee4", surface="#ffffff")
+DARK_DEFAULT = dict(data="#c9d1d9", emph="#f0f6fc", dim="#8b949e",
+                    rule="#30363d", surface="#0d1117")
+
+# Nightwing palette: sleek dark navy armor with electric cyan/blue data ink
+# Used for langs.svg, streak.svg, and year.svg
+LIGHT_NIGHTWING = dict(data="#1f8cf9", emph="#0b1b3d", dim="#5a6e85",
+                       rule="#d0dbe5", surface="#f4f7fb")
+DARK_NIGHTWING = dict(data="#3fb5ff", emph="#f0f6fc", dim="#7d95b0",
+                      rule="#1c2c4c", surface="#0a0f1d")
+
 # JBMono is the inlined subset below; the rest is a fallback for the unlikely
 # case a renderer ignores the embedded face.
 MONO = ("JBMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
@@ -198,21 +206,25 @@ def summarise(user):
 
 # ---------------------------------------------------------------- drawing
 
-def style(extra="", font=None):
+def style(extra="", font=None, palette="default"):
+    light = LIGHT_NIGHTWING if palette == "nightwing" else LIGHT_DEFAULT
+    dark = DARK_NIGHTWING if palette == "nightwing" else DARK_DEFAULT
+
     def block(t):
         return (f".d-f{{fill:{t['data']}}}.d-s{{stroke:{t['data']}}}"
                 f".e-f{{fill:{t['emph']}}}.m-f{{fill:{t['dim']}}}"
                 f".u-s{{stroke:{t['rule']}}}.r{{stroke:{t['surface']}}}")
+
     return (f"<style>{font or font_text()}"
-            f"{block(LIGHT)}.w{{fill:{LIGHT['data']};opacity:.13}}{extra}"
-            f"@media(prefers-color-scheme:dark){{{block(DARK)}"
-            f".w{{fill:{DARK['data']};opacity:.16}}}}</style>")
+            f"{block(light)}.w{{fill:{light['data']};opacity:.13}}{extra}"
+            f"@media(prefers-color-scheme:dark){{{block(dark)}"
+            f".w{{fill:{dark['data']};opacity:.16}}}}</style>")
 
 
-def head(w, h, font=None):
+def head(w, h, font=None, palette="default"):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
             f'viewBox="0 0 {w} {h}" fill="none" font-family="{MONO}">'
-            + style(font=font))
+            + style(font=font, palette=palette))
 
 
 def fade(delay, dur=0.45):
@@ -256,7 +268,8 @@ def draw_stats(s):
     H = 148
     weekly = s["weekly"] or [0]
     peak = max(weekly) or 1
-    p = [head(WIDTH, H)]
+    # Uses default grey ink palette
+    p = [head(WIDTH, H, palette="default")]
     p.append(f'<g opacity="0">{fade(0.10)}'
              + label(0, 50, s["total"], 52, "e-f", extra=' font-weight="600"')
              + label(0, 72, "contributions in the last year", 12) + '</g>')
@@ -300,7 +313,8 @@ def draw_streak(s):
                 if r["length"] else "&#8212;")
         cells.append((r["length"], lab, span))
 
-    p = [head(WIDTH, H)]
+    # Uses Nightwing palette
+    p = [head(WIDTH, H, palette="nightwing")]
     mid = WIDTH / 2
     p.append(f'<line x1="{mid:.0f}" y1="16" x2="{mid:.0f}" y2="80" '
              f'class="u-s" stroke-width="1" opacity="0">{fade(0.20)}</line>')
@@ -321,7 +335,8 @@ def draw_langs(s):
     colw = (WIDTH - LEFT - 30) / 2
     name_w, bar_max = 82, colw - 82 - 44
 
-    p = [head(WIDTH, H)]
+    # Uses Nightwing palette
+    p = [head(WIDTH, H, palette="nightwing")]
     groups = [(LEFT, "by bytes", s["by_size"], True),
               (LEFT + colw + 30, "by repos", s["by_repo"], False)]
     for gi, (gx, title, data, as_pct) in enumerate(groups):
@@ -352,19 +367,11 @@ def draw_langs(s):
 
 
 def draw_heading(word):
-    """A section heading in the mono face, with a hairline running right.
-
-    GitHub strips <style> and style= from markdown, so a real markdown heading
-    can only ever be GitHub's own sans. Rendering the label as an SVG is the
-    only way to put the page's own typeface on it. The rule starts past the
-    longest plausible advance (0.6em is the widest common monospace ratio), so
-    a narrower font on the viewer's machine widens the gap slightly rather than
-    colliding with the text.
-    """
+    """A section heading in the mono face, with a hairline running right."""
     FS = 16
     H = 26
     text_end = len(word) * FS * 0.6 + 18
-    p = [head(WIDTH, H, font=font_head())]
+    p = [head(WIDTH, H, font=font_head(), palette="default")]
     p.append(label(0, 18, word, FS, "e-f", extra=' font-weight="600"'))
     p.append(f'<line x1="{text_end:.0f}" y1="12.5" x2="{WIDTH}" y2="12.5" '
              f'class="u-s" stroke-width="1"/>')
@@ -387,7 +394,8 @@ def draw_year(s):
                 return i
         return 4
 
-    p = [head(WIDTH, H)]
+    # Uses Nightwing palette
+    p = [head(WIDTH, H, palette="nightwing")]
     p.append(f'<g opacity="0">{fade(0.10)}'
              + label(pad_l, 16, "THE YEAR", 9, "m-f",
                      extra=' letter-spacing="1.3"')
@@ -443,7 +451,6 @@ def draw_year(s):
     return "".join(p)
 
 
-
 def write(path, svg):
     old = ""
     if os.path.exists(path):
@@ -466,7 +473,6 @@ def main():
     s = summarise(fetch(login, token))
     files = {"stats.svg": draw_stats(s), "streak.svg": draw_streak(s),
              "langs.svg": draw_langs(s), "year.svg": draw_year(s)}
-    
 
     changed = [n for n, svg in files.items()
                if write(os.path.join(out_dir, n), svg)]
