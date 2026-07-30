@@ -16,6 +16,8 @@
   </tr>
 </table>
 <br>
+<img src="stats.svg" alt="GitHub contributions and weekly sparkline" />
+<br>
 <img src="./contrib-heatmap.svg" width="860" alt="Animated Contribution Heatmap" />
 
 </div>
