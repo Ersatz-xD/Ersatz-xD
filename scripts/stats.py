@@ -5,18 +5,9 @@ No third-party services and no dependencies — standard library only.
 
 Outputs:
   stats.svg   hero total + weekly sparkline (original grey ink)
-  streak.svg  current and longest streak (Nightwing palette)
-  langs.svg   top languages, by bytes and by repo count (Nightwing palette)
+  streak.svg  current/longest streak + lifetime stats (Nightwing palette)
+  langs.svg   top languages by commit activity & repo count (Nightwing palette)
   year.svg    the year as a character map, in the portrait's own ramp (Nightwing palette)
-
-Every file uses a monospace face, a transparent background, and the same 
-left-to-right clipPath reveal with a cursor riding the edge. Motion is SMIL 
-because GitHub strips <script> from READMEs.
-
-Env:
-  GITHUB_TOKEN  required
-  GH_LOGIN      user to summarise (default: Ersatz-xD)
-  OUT_DIR       where to write (default: repository root)
 """
 import base64
 import functools
@@ -28,25 +19,38 @@ from datetime import date, datetime, timedelta, timezone
 
 API = "https://api.github.com/graphql"
 
-# Two things are pinned for determinism, both learned the hard way:
-#  * the contribution window, to whole UTC days — otherwise "the past year" is
-#    measured from request time and days drift between week buckets, moving the
-#    sparkline a fraction of a pixel and committing noise every night;
-#  * privacy: PUBLIC on repositories — otherwise a personal token sees private
-#    repos and a workflow token doesn't, so language totals disagree.
+# Expanded query to fetch lifetime stats (stars, PRs, issues, commits, contributed to)
+# and default branch commit history for language-by-commit weighting.
 QUERY = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
     contributionsCollection(from: $from, to: $to) {
+      totalCommitContributions
+      totalPullRequestContributions
+      totalIssueContributions
+      totalRepositoryContributions
       contributionCalendar {
         totalContributions
         weeks { contributionDays { contributionCount date weekday } }
       }
     }
-    repositories(first: 100, ownerAffiliations: OWNER, isFork: false,
-                 privacy: PUBLIC) {
+    repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, PULL_REQUEST, ISSUE]) {
+      totalCount
+    }
+    pullRequests(first: 1) { totalCount }
+    issues(first: 1) { totalCount }
+    repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
+      totalCount
       nodes {
-        languages(first: 12, orderBy: {field: SIZE, direction: DESC}) {
+        stargazerCount
+        defaultBranchRef {
+          target {
+            ... on Commit {
+              history { totalCount }
+            }
+          }
+        }
+        languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
           edges { size node { name } }
         }
       }
@@ -62,14 +66,11 @@ DARK_DEFAULT = dict(data="#c9d1d9", emph="#f0f6fc", dim="#8b949e",
                     rule="#30363d", surface="#0d1117")
 
 # Nightwing palette: sleek dark navy armor with electric cyan/blue data ink
-# Used for langs.svg, streak.svg, and year.svg
 LIGHT_NIGHTWING = dict(data="#1f8cf9", emph="#0b1b3d", dim="#5a6e85",
                        rule="#d0dbe5", surface="#f4f7fb")
 DARK_NIGHTWING = dict(data="#3fb5ff", emph="#f0f6fc", dim="#7d95b0",
                       rule="#1c2c4c", surface="#0a0f1d")
 
-# JBMono is the inlined subset below; the rest is a fallback for the unlikely
-# case a renderer ignores the embedded face.
 MONO = ("JBMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
         "&apos;Liberation Mono&apos;,monospace")
 FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
@@ -77,13 +78,6 @@ FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 
 @functools.lru_cache(maxsize=None)
 def face(filename, weight):
-    """One @font-face rule with the subset inlined as a data URI.
-
-    An external font URL cannot work here: these SVGs are loaded through <img>,
-    and browsers refuse to fetch subresources for an image document. Inlining is
-    also what pins the advance width — the portrait's grid assumes 0.600 em, and
-    a viewer whose default monospace is narrower would otherwise see it squeezed.
-    """
     with open(os.path.join(FONT_DIR, filename), "rb") as f:
         b64 = base64.b64encode(f.read()).decode("ascii")
     return (f"@font-face{{font-family:JBMono;font-style:normal;"
@@ -92,19 +86,16 @@ def face(filename, weight):
 
 
 def font_text():
-    """Basic latin, both weights — for the data graphics."""
     return face("jbmono-400.woff2", 400) + face("jbmono-600.woff2", 600)
 
 
 def font_head():
-    """Only the letters the section headings use."""
     return face("jbmono-head.woff2", 600)
 
 WIDTH = 620            # every graphic shares one column width
-LEFT = 34              # shared left inset, so stacked blocks line up
-                       # (year.svg needs it for the weekday gutter)
+LEFT = 34              # shared left inset
 REVEAL = 1.30          # seconds; matches the portrait's cadence
-RAMP = [" ", ":", "+", "#", "@"]      # steps of the portrait's own ramp
+RAMP = [" ", ":", "+", "#", "@"]
 MON = ["jan", "feb", "mar", "apr", "may", "jun",
        "jul", "aug", "sep", "oct", "nov", "dec"]
 
@@ -142,12 +133,14 @@ def pretty(iso):
     return f"{MON[d.month - 1]} {d.day}"
 
 
-def streaks(days):
-    """Current and longest runs of days with at least one contribution.
+def format_num(n):
+    """Format large numbers cleanly (e.g., 1700 -> 1.7k)."""
+    if n >= 1000:
+        return f"{n/1000:.1f}k".replace(".0k", "k")
+    return str(n)
 
-    A zero on the final day doesn't break the current streak — the day isn't
-    over yet. Any earlier zero does.
-    """
+
+def streaks(days):
     best = dict(length=0, start=None, end=None)
     run, run_start = 0, None
     for d in days:
@@ -171,37 +164,57 @@ def streaks(days):
 
 
 def languages(repos):
-    by_size, by_repo = {}, {}
+    by_commits, by_repo = {}, {}
     for node in repos:
         edges = (node.get("languages") or {}).get("edges") or []
-        for e in edges:
-            name = e["node"]["name"]
-            by_size[name] = by_size.get(name, 0) + e["size"]
-        if edges:                       # primary language of the repo
-            top = edges[0]["node"]["name"]
-            by_repo[top] = by_repo.get(top, 0) + 1
+        # Extract total commits on the repo's default branch
+        commits = 1
+        if node.get("defaultBranchRef") and node["defaultBranchRef"].get("target"):
+            commits = max(1, node["defaultBranchRef"]["target"]["history"]["totalCount"])
+
+        if edges:
+            top_lang = edges[0]["node"]["name"]
+            by_repo[top_lang] = by_repo.get(top_lang, 0) + 1
+            # Weight language by commit count on the repository
+            by_commits[top_lang] = by_commits.get(top_lang, 0) + commits
 
     def rank(d):
-        # sort by value, then name, so equal values never reorder between runs
         return sorted(d.items(), key=lambda kv: (-kv[1], kv[0]))[:5]
 
-    return rank(by_size), rank(by_repo)
+    return rank(by_commits), rank(by_repo)
 
 
 def summarise(user):
-    cal = user["contributionsCollection"]["contributionCalendar"]
+    cc = user["contributionsCollection"]
+    cal = cc["contributionCalendar"]
     weeks = [w["contributionDays"] for w in cal["weeks"]]
     days = [d for w in weeks for d in w]
     weekly = [sum(d["contributionCount"] for d in w) for w in weeks]
     cur, best = streaks(days)
-    by_size, by_repo = languages(user["repositories"]["nodes"])
+    repos = user["repositories"]["nodes"]
+    by_commits, by_repo = languages(repos)
+    
+    # Calculate lifetime stats
+    total_stars = sum(r.get("stargazerCount", 0) for r in repos)
+    total_commits = cc.get("totalCommitContributions", 0)
+    total_prs = user.get("pullRequests", {}).get("totalCount", 0)
+    total_issues = user.get("issues", {}).get("totalCount", 0)
+    contributed_to = user.get("repositoriesContributedTo", {}).get("totalCount", 0)
+
     return dict(
         total=cal["totalContributions"],
         active=sum(1 for d in days if d["contributionCount"] > 0),
         best_week=max(weekly) if weekly else 0,
         weekly=weekly, weeks=weeks,
         current=cur, longest=best,
-        by_size=by_size, by_repo=by_repo)
+        by_commits=by_commits, by_repo=by_repo,
+        lifetime=dict(
+            stars=total_stars,
+            commits=total_commits,
+            prs=total_prs,
+            issues=total_issues,
+            contrib_to=contributed_to
+        ))
 
 
 # ---------------------------------------------------------------- drawing
@@ -233,7 +246,6 @@ def fade(delay, dur=0.45):
 
 
 def wipe(cid, x, y, w, h, delay, dur=REVEAL):
-    """clipPath reveal plus the cursor block that rides its edge."""
     clip = (f'<clipPath id="{cid}"><rect x="{x}" y="{y}" height="{h}" width="0">'
             f'<animate attributeName="width" from="0" to="{w}" '
             f'begin="{delay:.2f}s" dur="{dur}s" fill="freeze"/></rect></clipPath>')
@@ -253,7 +265,6 @@ def label(x, y, text, size=11, cls="m-f", anchor="start", extra=""):
 
 
 def hbar(x, y, w, h, cls="d-f", r=3.0):
-    """Horizontal bar: rounded data-end on the right, square at the baseline."""
     if w <= 0.6:
         return ""
     r = min(r, h / 2.0, w)
@@ -268,7 +279,6 @@ def draw_stats(s):
     H = 148
     weekly = s["weekly"] or [0]
     peak = max(weekly) or 1
-    # Uses default grey ink palette
     p = [head(WIDTH, H, palette="default")]
     p.append(f'<g opacity="0">{fade(0.10)}'
              + label(0, 50, s["total"], 52, "e-f", extra=' font-weight="600"')
@@ -304,8 +314,11 @@ def draw_stats(s):
 
 
 def draw_streak(s):
-    """Current and longest streak, split by a hairline."""
-    H = 96
+    """Current streak, longest streak, and lifetime stats side-by-side."""
+    H = 130
+    p = [head(WIDTH, H, palette="nightwing")]
+    
+    # Left Side: Streaks (2 columns)
     cells = []
     for k, lab in (("current", "current streak"), ("longest", "longest streak")):
         r = s[k]
@@ -313,31 +326,52 @@ def draw_streak(s):
                 if r["length"] else "&#8212;")
         cells.append((r["length"], lab, span))
 
-    # Uses Nightwing palette
-    p = [head(WIDTH, H, palette="nightwing")]
-    mid = WIDTH / 2
-    p.append(f'<line x1="{mid:.0f}" y1="16" x2="{mid:.0f}" y2="80" '
-             f'class="u-s" stroke-width="1" opacity="0">{fade(0.20)}</line>')
+    col_w = 160
     for i, (val, lab, span) in enumerate(cells):
-        x = LEFT if i == 0 else mid + LEFT
+        x = LEFT + i * col_w
         p.append(f'<g opacity="0">{fade(0.12 + i * 0.14)}'
                  + label(x, 44, f"{val}", 34, "e-f", extra=' font-weight="600"')
                  + label(x, 64, lab, 11)
                  + label(x, 80, span, 10) + '</g>')
+
+    # Hairline divider between Streaks and Lifetime Stats
+    div_x = 330
+    p.append(f'<line x1="{div_x}" y1="16" x2="{div_x}" y2="114" '
+             f'class="u-s" stroke-width="1" opacity="0">{fade(0.20)}</line>')
+
+    # Right Side: Lifetime Stats List
+    lt = s["lifetime"]
+    stats_list = [
+        ("Total Stars", format_num(lt["stars"])),
+        ("Total Commits", format_num(lt["commits"])),
+        ("Total PRs", format_num(lt["prs"])),
+        ("Total Issues", format_num(lt["issues"])),
+        ("Contributed to", format_num(lt["contrib_to"])),
+    ]
+    
+    rx_label = div_x + 24
+    rx_val = WIDTH - 20
+    for i, (lab, val) in enumerate(stats_list):
+        y = 30 + i * 20
+        p.append(f'<g opacity="0">{fade(0.30 + i * 0.08)}'
+                 + label(rx_label, y, f"{lab}:", 11, "m-f")
+                 + label(rx_val, y, str(val), 12, "d-f", "end",
+                         extra=' font-weight="600"')
+                 + '</g>')
+
     p.append("</svg>")
     return "".join(p)
 
 
 def draw_langs(s):
-    """Two small charts: share of bytes, and count of repos by main language."""
-    rows = max(len(s["by_size"]), len(s["by_repo"]), 1)
+    """Two charts: active languages by commit volume, and by repo count."""
+    rows = max(len(s["by_commits"]), len(s["by_repo"]), 1)
     H = 26 + rows * 22 + 6
     colw = (WIDTH - LEFT - 30) / 2
     name_w, bar_max = 82, colw - 82 - 44
 
-    # Uses Nightwing palette
     p = [head(WIDTH, H, palette="nightwing")]
-    groups = [(LEFT, "by bytes", s["by_size"], True),
+    groups = [(LEFT, "by commits", s["by_commits"], True),
               (LEFT + colw + 30, "by repos", s["by_repo"], False)]
     for gi, (gx, title, data, as_pct) in enumerate(groups):
         p.append(f'<g opacity="0">{fade(0.10 + gi * 0.10)}'
@@ -366,19 +400,6 @@ def draw_langs(s):
     return "".join(p)
 
 
-def draw_heading(word):
-    """A section heading in the mono face, with a hairline running right."""
-    FS = 16
-    H = 26
-    text_end = len(word) * FS * 0.6 + 18
-    p = [head(WIDTH, H, font=font_head(), palette="default")]
-    p.append(label(0, 18, word, FS, "e-f", extra=' font-weight="600"'))
-    p.append(f'<line x1="{text_end:.0f}" y1="12.5" x2="{WIDTH}" y2="12.5" '
-             f'class="u-s" stroke-width="1"/>')
-    p.append("</svg>")
-    return "".join(p)
-
-
 def draw_year(s):
     """Seven rows by fifty-three weeks, intensity as a character."""
     FS, LH, COLW = 9.2, 11.0, 2
@@ -394,7 +415,6 @@ def draw_year(s):
                 return i
         return 4
 
-    # Uses Nightwing palette
     p = [head(WIDTH, H, palette="nightwing")]
     p.append(f'<g opacity="0">{fade(0.10)}'
              + label(pad_l, 16, "THE YEAR", 9, "m-f",
@@ -403,7 +423,6 @@ def draw_year(s):
                      f"{sum(len(w) for w in weeks)} days had a contribution", 11)
              + '</g>')
 
-    # ramp legend, so the encoding is never carried by shade alone
     lx = WIDTH - 6
     p.append(f'<g opacity="0">{fade(1.30)}'
              + label(lx - 78, 32, "less", 9, "m-f", "end")
@@ -479,8 +498,8 @@ def main():
     print(f"{s['total']} contributions, {s['active']} active days, "
           f"best week {s['best_week']}, current streak "
           f"{s['current']['length']}, longest {s['longest']['length']}")
-    print("languages by bytes: "
-          + ", ".join(f"{n} {v}" for n, v in s["by_size"]))
+    print("languages by commits: "
+          + ", ".join(f"{n} {v}" for n, v in s["by_commits"]))
     print("updated: " + (", ".join(sorted(changed)) if changed else "nothing"))
 
 

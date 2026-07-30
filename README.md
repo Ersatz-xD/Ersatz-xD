@@ -1,11 +1,8 @@
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0D2137&height=240&section=header&text=Ayaan%20Ahmed%20Khan&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Full-Stack%20Developer%20|%20AI/ML%20Explorer%20|%20Creative%20Technologist&descAlignY=58&descSize=18" width="100%" alt="Header Banner"/>
   
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=550&lines=Ayaan%40comsats+~+%24+neofetch;Building+Full-Stack+MERN+%26+Laravel+Apps;Exploring+TensorFlow+%26+Generative+AI;Manjaro+Linux+%5BKDE+Plasma%5D+Power+User" alt="Typing SVG" />
 </div>
-
-
 
 <br>
 <div align="center">
@@ -17,19 +14,18 @@
 </table>
 <br>
 <img src="stats.svg" alt="GitHub contributions and weekly sparkline" />
-<br>
-<img src="./contrib-heatmap.svg" width="860" alt="Animated Contribution Heatmap" />
+
 
 </div>
 
 ---
-
 
 <div align="center">
   <p><i>Building scalable web applications, cross-platform mobile tools, and AI/ML pipelines.</i></p>
 </div>
 
 ### **💻 Languages & Core Systems**
+
 <div align="center">
   <img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=38BDF8&borderColor=38BDF8" alt="Python" />
   <img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=38BDF8" alt="JavaScript" />
@@ -39,6 +35,7 @@
 </div>
 
 ### **🌐 Web & Mobile Development**
+
 <div align="center">
   <img src="https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react&logoColor=00D9FF" alt="React" />
   <img src="https://img.shields.io/badge/Next.js-0D1117?style=for-the-badge&logo=nextdotjs&logoColor=00D9FF" alt="Next.js" />
@@ -50,6 +47,7 @@
 </div>
 
 ### **🤖 AI / Machine Learning & Cloud Data**
+
 <div align="center">
   <img src="https://img.shields.io/badge/TensorFlow-0D1117?style=for-the-badge&logo=tensorflow&logoColor=58A6FF" alt="TensorFlow" />
   <img src="https://img.shields.io/badge/PyTorch-0D1117?style=for-the-badge&logo=pytorch&logoColor=58A6FF" alt="PyTorch" />
@@ -61,6 +59,7 @@
 </div>
 
 ### **🎨 Creative Design & Utilities**
+
 <div align="center">
   <img src="https://img.shields.io/badge/Figma-0D1117?style=for-the-badge&logo=figma&logoColor=00D9FF" alt="Figma" />
   <img src="https://img.shields.io/badge/Photoshop-0D1117?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=00D9FF" alt="Photoshop" />
@@ -71,49 +70,26 @@
 ---
 
 <div align="center">
+<br><br>
+<div align="center">
+  <img src="streak.svg" alt="Current and longest contribution streak" />
+</div>
+  
+ <br>
+<img src="year.svg" alt="Year of contributions mapped as ASCII ramp" />
 
-  <table width="860">
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://streak-stats.demolab.com/?user=Ersatz-xD&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=00D9FF&fire=00D9FF&currStreakLabel=58A6FF&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=58A6FF" alt="GitHub Streak Stats" width="100%"/>
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ersatz-xD&theme=tokyonight" alt="Profile Summary Stats" width="100%"/>
-      </td>
-    </tr>
-  </table>
+<br><br>
 
-  <br>
+  <!-- Languages by commits and repo count -->
+<img src="langs.svg" alt="Top languages by bytes and repo count" />
 
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ersatz-xD&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00D9FF&line=58A6FF&point=FFFFFF" alt="GitHub Activity Graph" width="860"/>
-
-  <br><br>
-
-  <table width="860">
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Ersatz-xD&theme=tokyonight&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=58A6FF" width="100%" alt="Commit Languages"/>
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ersatz-xD&theme=tokyonight&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=58A6FF" width="100%" alt="Repo Languages"/>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ersatz-xD&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&include_all_commits=true&count_private=true" width="100%" alt="Top Languages"/>
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Ersatz-xD&theme=tokyonight&utcOffset=5&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9" width="100%" alt="Productive Time"/>
-      </td>
-    </tr>
-  </table>
+<br><br>
 
 </div>
 
-> **🎯 Professional Insight:** *Commit-based analytics above represent my full software engineering footprint—including collaborative contributions across organizational repositories and hackathon teams.*
+> **🎯 Professional Insight:** _Commit-based analytics above represent my full software engineering footprint—including collaborative contributions across organizational repositories and hackathon teams._
 
 ---
-
 
 <div align="center">
 
@@ -149,13 +125,12 @@
     </tr>
   </table>
 
-  <br><br>
+<br><br>
 
   <img src="https://github-profile-trophy.vercel.app/?username=Ersatz-xD&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1" alt="GitHub Trophies"/>
 </div>
 
 ---
-
 
 <div align="center">
 
