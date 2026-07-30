@@ -1,0 +1,42 @@
+name: Update Profile Assets
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Generate SVG graphics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+          OUT_DIR: .
+        run: python3 scripts/stats.py
+
+      - name: Fetch and Render Heatmap
+        env:
+          GITHUB_USER: ${{ github.repository_owner }}
+        run: |
+          python scripts/fetch_contributions.py
+          python scripts/render_heatmap_svg.py
+
+      - name: Commit & Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update profile stats and heatmap [skip ci]"
+          file_pattern: "*.svg data/contributions.json"
