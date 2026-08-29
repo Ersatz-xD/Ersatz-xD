@@ -96,7 +96,7 @@
   <br><br>
 </div>
 
-> **🎯 Professional Insight:** _Commit-based analytics above represent my full software engineering footprint—including collaborative contributions across organizational repositories and hackathon teams._
+> ** Professional Insight:** _Commit-based analytics above represent my full software engineering footprint—including collaborative contributions across organizational repositories and hackathon teams._
 
 ---
 
@@ -108,7 +108,7 @@
       <td align="center" width="33%" valign="top">
         <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="70" alt="Learning Icon">
         <br><br>
-        <strong>🚀 Currently Learning</strong>
+        <strong> Currently Learning</strong>
         <br><br>
         • Advanced React Patterns<br>
         • Next.js 14 Server Components<br>
@@ -117,7 +117,7 @@
       <td align="center" width="33%" valign="top">
         <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="70" alt="Building Icon">
         <br><br>
-        <strong>🔨 Active Builds</strong>
+        <strong> Active Builds</strong>
         <br><br>
         • Full-Stack MERN & Laravel Apps<br>
         • Generative AI API Integrations<br>
@@ -126,7 +126,7 @@
       <td align="center" width="33%" valign="top">
         <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="70" alt="Goals Icon">
         <br><br>
-        <strong>🎯 Technical Goals</strong>
+        <strong> Technical Goals</strong>
         <br><br>
         • Open-Source Contributions<br>
         • Campus Tech Community Building<br>
