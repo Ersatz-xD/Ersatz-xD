@@ -96,7 +96,7 @@
   <br><br>
 </div>
 
-> ** Professional Insight:** _Commit-based analytics above represent my full software engineering footprint—including collaborative contributions across organizational repositories and hackathon teams._
+> **Professional Insight:** _Commit-based analytics above represent my full software engineering footprint—including collaborative contributions across organizational repositories and hackathon teams._
 
 ---
 
